@@ -1,11 +1,19 @@
 # Packages for daily tasks
+- firewalld
 - Chromium
 - Thunderbird
 - Strawberry
 - VLC
-- GIMP
-- firewalld
-- Audacity (?)
+- GIMP (Not so much these days)
+- Audacity (Not so much these days)
+- Calibre with [plugins](https://plugins.calibre-ebook.com/):
+  - Chinese Text Conversion
+  - EpubMerge
+  - EpubSplit
+  - DeDRM
+  - DeACSM (not working on my Ubuntu)
+
+May also try this commandline tool to turn ASCM to DRM-free Epub. [Github](https://github.com/esn/knock)
 
 
 ## GNOME Extensions
