@@ -8,3 +8,10 @@ Appearance
 - Cursor: Sunity-cursors
 - Icons: Papirus-Dark
 - Legacy Applications: Adwaita (default)
+
+## GNOME Extensions
+Managed by GNOME extesion manager
+- Just Perfection
+- Panel Date Format
+- Weather O'Clock
+- Dash to Dock
