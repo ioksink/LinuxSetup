@@ -15,13 +15,6 @@
 
 May also try this commandline tool to turn ASCM to DRM-free Epub. [Github](https://github.com/esn/knock)
 
-
-## GNOME Extensions
-Managed by GNOME extesion manager
-- Just Perfection
-- Panel Date Format
-- Weather O'Clock
-
 # Study and research
 - Rstudio
 - Codium
