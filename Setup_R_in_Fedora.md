@@ -85,3 +85,29 @@ local({
     })
 options(menu.graphics = FALSE)
 ```
+
+# Quarto
+
+There is no rpm package for quarto, so we have to install [tarball](https://quarto.org/docs/download/). Decompress the file and link the file to user bin. `sudo ln -s /home/melissa/gitClone/quarto-1.9.37-linux-amd64/quarto-1.9.37/bin/quarto /usr/local/bin/quarto` And then check with `quarto --version`.
+
+To use it with R, you still need to install quarto in R. Type `install.packages("quarto")` in R terminal.
+
+## SVG image convert
+
+Another function used in rendering qmd files with svg images is rsvg-convert, which is found in system via `sudo dnf install librsvg2-tools`.
+
+## System latex conflict with quarto
+
+> ERROR: Problem running `fmtutil-sys --all` to rebuild format tree.
+
+Running this command with sudo is completely alright, however, quarto does not have sudo privilege. You can decide whether to remove system latex and use the tinytex package
+
+```zsh
+sudo dnf remove "texlive-*"
+quarto install tinytex
+```
+or keep the system latex package (installed with dnf) and install .sty files.
+
+```zsh
+sudo dnf install 'tex(setspace.sty)'
+```
