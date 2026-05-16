@@ -12,6 +12,6 @@ Appearance
 ## GNOME Extensions
 Managed by GNOME extesion manager
 - Just Perfection
-- Panel Date Format
-- Weather O'Clock
+- Date Menu Formatter
+- WeatherPanel
 - Dash to Dock
