@@ -1,12 +1,12 @@
 
 ## Connecting to my account at the Uni storage server
-smb://<StudentID>.files.uni-freiburg.de/home/<StudentID>
+smb://[StudentID].files.uni-freiburg.de/home/[StudentID]
 
-Username: <StudentID>@uni-freiburg.de
+Username: [StudentID]@uni-freiburg.de
 
 Profile: PUBLIC
 
-Password: <eduroam-password>
+Password: [eduroam-password]
 
 ## 學校信箱設定 Uni Freiburg email third-party client setup
 
@@ -16,7 +16,7 @@ Password: <eduroam-password>
 
 首先，要去哥廷根大學的系統（[GWDG IDM portal](https://idm.gwdg.de/Account/Login?ReturnUrl=%2F)）裡面申請一組使用者名字以及密碼。這個系統是用學校帳密登入，然後要下載eduMFA Authenticator到手機，二段式認證登入。
 
-左側選單選[DE]APP-ZUGANGSDATEN/[EN]APPLICATION CREDENTIALS，為這個連結取個名字(Bezeichnung)跟使用期限(Ablaufdatum)之後就會產生一組帳號密碼(uid&Passwort)。右邊各有一個複製貼上按鈕📄，一定要開個編輯器馬上存起來，離開就再也看不到這組帳密了。
+左側選單選[DE]APP-ZUGANGSDATEN/[EN]APPLICATION CREDENTIALS，為這個連結取個名字(Bezeichnung)跟使用期限(Ablaufdatum)之後就會產生一組帳號密碼(uid&Passwort)。右邊各有一個複製貼上按鈕，一定要開個編輯器馬上存起來，離開就再也看不到這組帳密了。
 
 另外要說明，學校帳號跟名字連在一起是兩個信箱名稱的Alias，拿我的帳號來說yk112跟yu-chen.kuo都是同一個信箱的名字。可以在裡面設定Information > Primäre E-Mail-Adresse擇一。預設是名字的那個。可能只有像我在入學前有更改過護照拼寫會偏好使用學校帳號的那個信箱名稱。附帶一提，要跟學校更改學生證名字的方法是直接去註冊處二樓的外籍生櫃台，給他看護照（或是其他證明文件）以及現有的學生證就可以申請。等幾天之後收到通知再去一樓領新的學生證，不需要繳費，但是要重新申請SWFR帳號以及Autoload，不會自動轉移。
 
@@ -49,18 +49,18 @@ Under Open-Xchange, click "ADD +" to apply for user name and password. This uid 
 
 ### Take Thunderbird email client as example:
 
-Email: <studentID>@email.uni-freiburg.de
+Email: [StudentID]@email.uni-freiburg.de
 
-Password: <password from GWDG>
+Password: [password from GWDG]
 
 Incoming server
 - Protokoll/Protocol: IMAP
 - Hostname: email.uni-freiburg.de
 - Port: 993
 - SSL/TLS
-- Benutzername/UID/User: <uid from GWDG>
+- Benutzername/UID/User: [uid from GWDG]
 
 Outgoing server
 - Port: 587
 - STARTTLS
-- Benutzername/UID/User: <uid from GWDG>
+- Benutzername/UID/User: [uid from GWDG]
