@@ -1,16 +1,49 @@
+# Uni Freiburg myAccount
 
-## Connecting to my account at the Uni storage server
-smb://[StudentID].files.uni-freiburg.de/home/[StudentID]
+Start from getting your account and password by the first immatriculation.
 
-Username: [StudentID]@uni-freiburg.de
+Modify settings and receive eduroam password in [myAccount](https://myaccount.uni-freiburg.de/uadmin/login).
 
-Profile: PUBLIC
+# VPN
 
-Password: [eduroam-password]
+According to the Beratung Rechenzentrum der Universität Freiburg, `openconnect` and `network-manager-openconnect` works better in Linux. For Windows and Mac, download FortiClient following [these steps](https://wiki.uni-freiburg.de/rz/doku.php?id=vpn_fuer_windows) instead.
 
-## 學校信箱設定 Uni Freiburg email third-party client setup
+General
+- VPN Protocol: Fortinet SSL VPN
+- Gateway: fortivpn.uni-freiburg.de
+- User Agent: [StudentID]@email.uni-freiburg.de
+- CA certificate (none)
+Software Token Authentication
+- Token Mode: RSA SecurID -- manually entered
 
-> 2025-09-24 Edited, ENG below
+Connect via login
+- User: [StudentID]@uni-freiburg.de
+- Password: [eduroam password]
+
+## AI service/KI
+
+在校園網路中，提供AI服務。非連結校園網路時，必須使用學校提供的VPN連到校園網路。
+
+Within Uni network, chatGPT and Mistral models are provided in [OpenWebUI](https://openwebui.uni-freiburg.de/)
+
+## Connecting to my account at the Uni storage server (Netzlaufwer)
+
+在校園網路中，學校提供一個Samba架構的伺服器供諸君儲存檔案。非連結校園網路時，必須使用學校提供的VPN連到校園網路。
+
+Uni wiki manual "Netzlaufwerk verbinden" for [Win10](https://wiki.uni-freiburg.de/rz/doku.php?id=netzlaufwerk_verbinden_windows), [Mac](http://wiki.uni-freiburg.de/rz/doku.php?id=smb_mac), and [Linux](http://wiki.uni-freiburg.de/rz/doku.php?id=smb_linux).
+
+In GNOME file manager in linux, go to tab "Network".
+
+Input `smb://[StudentID].files.uni-freiburg.de/home/[StudentID]` in text box.
+
+A window would appear...
+- Username: [StudentID]@uni-freiburg.de
+- Profile: PUBLIC
+- Password: [eduroam-password]
+
+# 學校信箱設定 Uni Freiburg email third-party client setup
+
+> 2025-09-24 發布於台灣Freiburg同學會, ENG below
 
 由於最近重新設定了電腦，重新在電腦的信箱程式裡面登入學校信箱，想起第一次設定的惡夢，供新年度菜雞們參考。一開始當然可以直接去email.uni-freiburg.de這個網站，也就是＠之後的那一串網址，用網頁登入學校信箱。但是要設定到電腦跟手機裡面超級頭痛。
 
@@ -22,14 +55,14 @@ Password: [eduroam-password]
 
 扯遠了，總之現在可以開始在自己的裝置上面設定登入資訊了。在自己選擇的信箱程式登入頁面輸入信箱，密碼是GWDG系統產生的那個密碼。
 
-收信伺服器
+收信伺服器 Incoming server
 - Protokoll/Protocol: IMAP
 - Hostname: email.uni-freiburg.de
 - Port: 993
 - SSL/TLS 加密
 - Benutzername/UID/User: (GWDG申請到的帳號)
 
-發信伺服器
+發信伺服器 Outgoing server
 - Port: 587
 - STARTTLS 加密
 
