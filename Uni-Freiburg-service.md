@@ -26,6 +26,10 @@ Connect via login
 
 Within Uni network, chatGPT and Mistral models are provided in [OpenWebUI](https://openwebui.uni-freiburg.de/)
 
+API key can be retrieved from the setting of the webpage and used in tools such as vscode extensions.
+- Base URL = https://openwebui.uni-freiburg.de/api
+- List of model names can be found via `bash curl -L -v -H "Authorization: Bearer [api_key]" -H "Accept: application/json" https://openwebui.uni-freiburg.de/api/models >> openwebui.json`. Look for "id" in the output file `openwebui.json`. 
+
 ## Connecting to my account at the Uni storage server (Netzlaufwer)
 
 在校園網路中，學校提供一個Samba架構的伺服器供諸君儲存檔案。非連結校園網路時，必須使用學校提供的VPN連到校園網路。
