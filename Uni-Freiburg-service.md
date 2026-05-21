@@ -32,7 +32,7 @@ API key can be retrieved from the setting of the webpage and used in tools such 
 
 ## Connecting to my account at the Uni storage server (Netzlaufwer)
 
-在校園網路中，學校提供一個Samba架構的伺服器供諸君儲存檔案。非連結校園網路時，必須使用學校提供的VPN連到校園網路。
+在校園網路中，學校提供一個Samba架構的伺服器供諸君儲存檔案。非連結校園網路時，必須使用學校提供的VPN連到校園網路。（不知道具體可以用的雲端空間大小）
 
 Uni wiki manual "Netzlaufwerk verbinden" for [Win10](https://wiki.uni-freiburg.de/rz/doku.php?id=netzlaufwerk_verbinden_windows), [Mac](http://wiki.uni-freiburg.de/rz/doku.php?id=smb_mac), and [Linux](http://wiki.uni-freiburg.de/rz/doku.php?id=smb_linux).
 
