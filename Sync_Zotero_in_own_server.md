@@ -74,7 +74,7 @@ Because you gave the key a custom name, you need to tell the server to use it.
 
 **Step A: Copy the new key to the server**
 ```bash
-ssh-copy-id -i ~/.ssh/id_university.pub yk112@yk112.files.uni-freiburg.de
+ssh-copy-id -i ~/.ssh/id_university.pub <UserID@login.uni-freiburg.de
 ```
 
 **Step B: Tell SSH to use this key automatically**
@@ -86,9 +86,9 @@ nano ~/.ssh/config
 
 **Paste this inside:**
 ```text
-Host yk112.files.uni-freiburg.de
-    HostName yk112.files.uni-freiburg.de
-    User yk112
+Host login.uni-freiburg.de
+    HostName login.uni-freiburg.de
+    User <UserID>
     IdentityFile ~/.ssh/id_university
 ```
 
