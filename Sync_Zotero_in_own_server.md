@@ -32,7 +32,7 @@ Now you can use sshpass. You can either directly show your password in every usa
 
 Alternatively, use `ssh-keygen`.
 1. Generate a key in the prompt `ssh-keygen -t ed25519`
-2. Copy the key to your university server `ssh-copy-id yk112@login.uni-freiburg.de`
+2. Copy the key to your university server `ssh-copy-id <UserID>@login.uni-freiburg.de`
 
 Once you set this up, you can sync your Zotero files with a single command without password prompt.
 
