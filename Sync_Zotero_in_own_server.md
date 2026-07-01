@@ -44,22 +44,22 @@ First, turn on the Zotero sync without file inside the Zotero program.
 
 | Step | Machine | Command | Movement | Goal |
 | :--- | :--- | :--- | :--- | :--- |
-| **1** | Debian | `rsync` $\rightarrow$ Server | Push | Push Desktop files to Server |
-| **2** | Fedora | `rsync` (no delete) $\rightarrow$ Server | Push (no delete) | Add Laptop files to Server (Merge) |
-| **3** | Debian | `rsync` Server $\rightarrow$ Local | Pull | Get all merged files on Desktop |
-| **4** | Fedora | `rsync` Server $\rightarrow$ Local | Pull | Get all merged files on Laptop |
+| **1** | Working Desktop | `rsync` $\rightarrow$ Server | Push | Push Desktop files to Server |
+| **2** | Personal Laptop | `rsync` (no delete) $\rightarrow$ Server | Push (no delete) | Add Laptop files to Server (Merge) |
+| **3** | Working Desktop | `rsync` Server $\rightarrow$ Local | Pull | Get all merged files on Desktop |
+| **4** | Personal Laptop | `rsync` Server $\rightarrow$ Local | Pull | Get all merged files on Laptop |
 
 ### The "Grand Merge" (One-Time Only)
-You currently have PDFs on your Debian machine and PDFs on your Fedora machine. Some might be the same, and some might be unique to one machine. You need to bring them all together into one "Master" folder on the server.
+You currently have PDFs on your working desktop and PDFs on your personal laptop. Some might be the same, and some might be unique to one machine. You need to bring them all together into one "Master" folder on the server.
 
-**1. On your Debian Desktop:**
+**1. On your working desktop:**
 Upload everything you have to the server.
 ```bash
 rsync -avz --no-perms --no-owner --no-group ~/Zotero/storage/ "<serverLink>"
 ```
 *Now the server has everything from your Desktop.*
 
-**2. On your Fedora Laptop:**
+**2. On your personal laptop:**
 Upload everything you have to the server. **CRITICAL: Remove the `--delete` flag for this step.**
 ```bash
 rsync -avz --no-perms --no-owner --no-group ~/Zotero/storage/ "<serverLink>"
@@ -71,13 +71,13 @@ rsync -avz --no-perms --no-owner --no-group ~/Zotero/storage/ "<serverLink>"
 ### Synchronize Local Folders to the Master
 Now that the server has every file from both machines, you need to make sure your local folders match that master list.
 
-**1. On Debian Desktop:**
+**1. On your working desktop:**
 Pull everything from the server. (Put `--delete` back in to remove any duplicates/old versions).
 ```bash
 rsync -avz --no-perms --no-owner --no-group --delete "<serverLink>" ~/Zotero/storage/
 ```
 
-**2. On Fedora Laptop:**
+**2. On your personal laptop:**
 Pull everything from the server.
 ```bash
 rsync -avz --no-perms --no-owner --no-group --delete "<serverLink>" ~/Zotero/storage/
@@ -93,7 +93,7 @@ Now that you are integrated, you simply follow the daily routine we discussed pr
 2. **End of Session:** Always `rsync` **FROM** Local $\rightarrow$ **TO** Server.
 
 ### Why this works:
-*   **Database:** Zotero's built-in sync handles the "integration" of the citations. If you added a book on Fedora, Zotero Cloud tells Debian "Here is a new book," and it creates a folder in `~/Zotero/storage/` with a random ID (e.g., `ABC1234`).
+*   **Database:** Zotero's built-in sync handles the "integration" of the citations. If you added a book on one machine, Zotero Cloud tells the other machine "Here is a new book," and it creates a folder in `~/Zotero/storage/` with a random ID (e.g., `ABC1234`).
 *   **Files:** When you `rsync` from the server, the PDF inside `ABC1234` is downloaded to your local machine. Zotero then sees the file is there and the link is restored.
 
 
