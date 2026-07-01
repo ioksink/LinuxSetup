@@ -36,6 +36,67 @@ Alternatively, use `ssh-keygen`.
 
 Once you set this up, you can sync your Zotero files with a single command without password prompt.
 
+## A more detailed guide for ssh key generate
+
+### 1. What does `ed25519` mean?
+`ed25519` is the **algorithm** used to create the key. Think of it as the "brand" or "style" of the lock.
+*   **RSA:** The old standard. It creates very long keys and is slower.
+*   **ED25519:** The modern standard. It is much smaller, faster, and more secure than RSA.
+
+If you already have a key for GitHub, it is likely either an `id_rsa` or an `id_ed25519` key. You can use the same algorithm for your university server; it doesn't conflict with GitHub.
+
+### 2. Will it overwrite your GitHub key?
+When you run `ssh-keygen`, the program asks you:
+`Enter file in which to save the key (/home/user/.ssh/id_ed25519):`
+
+*   **If you just press ENTER:** It will try to save the key as `id_ed25519`. If you already have a key with that name for GitHub, the terminal will say: **"Overwrite (o)k / (n)o?"**
+*   **IF YOU TYPE `n` (No):** It will cancel, and your GitHub key remains safe.
+*   **IF YOU TYPE `o` (Yes):** It will **delete your GitHub key** and replace it with a new one. Your GitHub connection will break immediately.
+
+### 3. The Best Practice: Create a "Named Key"
+Since you are using this computer for multiple different things (GitHub, University Server, etc.), the professional way to do this is to give each key a **unique name**.
+
+Instead of pressing Enter, give the key a specific name for the university.
+
+**Run this command:**
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_university
+```
+*   `-t ed25519`: Sets the secure algorithm.
+*   `-f ~/.ssh/id_university`: Tells the computer to save the key as `id_university` instead of the default `id_ed25519`.
+
+**Now you have two separate keys:**
+1. `id_ed25519` $\rightarrow$ for GitHub.
+2. `id_university` $\rightarrow$ for your Zotero server.
+
+### 4. How to use the Named Key
+Because you gave the key a custom name, you need to tell the server to use it.
+
+**Step A: Copy the new key to the server**
+```bash
+ssh-copy-id -i ~/.ssh/id_university.pub yk112@yk112.files.uni-freiburg.de
+```
+
+**Step B: Tell SSH to use this key automatically**
+You don't want to tell `rsync` which key to use every time. To automate this, create (or edit) a file called `config` in your `.ssh` folder:
+
+```bash
+nano ~/.ssh/config
+```
+
+**Paste this inside:**
+```text
+Host yk112.files.uni-freiburg.de
+    HostName yk112.files.uni-freiburg.de
+    User yk112
+    IdentityFile ~/.ssh/id_university
+```
+
+### Why this is the best setup:
+1. **Safety:** Your GitHub key is untouched and safe.
+2. **Organization:** You know exactly which key is for which server.
+3. **Simplicity:** Your `zpull` and `zpush` aliases will now work **instantly** without asking for a password, because the `config` file tells the computer: *"Whenever I connect to this university server, use the `id_university` key."*
+
 ## Step 2: pool papers from both computers into the server.
 
 First, turn on the Zotero sync without file inside the Zotero program.
