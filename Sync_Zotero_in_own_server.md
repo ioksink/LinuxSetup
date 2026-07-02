@@ -14,9 +14,9 @@ Doing so can corrupt your library and cause you to lose your citations. Instead,
 
 ## Step 1: Install tools
 
-The tools used here are all based in Linux environment, including packages of `rsync`, `ssh`, and `sshpass`. 
+The tools used here are all based in Linux environment, including packages of `rsync` and `ssh`. 
 
-`rsync` is the main syncing tool. `ssh` builds a secure and fast connection with the server and `sshpass` pass the password to them so that you won't need to input the password every time. For security reasons, one can neglect the use of `sshpass` as well.
+`rsync` is the main syncing tool. `ssh` builds a secure and fast connection with the server.
 
 Please install them using your package manager:
 - Debian-based distro such as Ubuntu runs `sudo apt install <packageName>`
@@ -28,6 +28,12 @@ Please install them using your package manager:
 
 ## Step 2: check connection
 
+You can follow the [Uni-Freiburg-service guide](Uni-Freiburg-service.md) to add the server to your file manager. Or, test a ssh connection:
+
+```bash
+ssh <UserID>@login.uni-freiburg.de
+```
+
 ### Input password with sshpass
 
 Before using `sshpass`, you at least need to connect to the server with ssh once to build fingerprint. Uni-Freiburg users run `<UserID>@login.uni-freiburg.de` in the terminal. The prompt would ask for the password. Give the uni account password and press Enter. You will now enter the storage university grants you. Enter "exit" when you want to close the connection.
@@ -38,7 +44,8 @@ Now you can use sshpass. You can either directly show your password in every usa
 
 Alternatively, use `ssh-keygen`.
 1. Generate a key in the prompt `ssh-keygen -t ed25519`
-2. Copy the key to your university server `ssh-copy-id <UserID>@login.uni-freiburg.de`
+2. Name the key. For example, "id_university". (More explanation below.)
+3. Copy the key to your university server `ssh-copy-id -i ~/.ssh/id_university.pub yk112@login.uni-freiburg.d`
 
 Once you set this up, you can sync your Zotero files with a single command without the password prompt.
 
@@ -80,10 +87,11 @@ You don't want to tell `rsync` which key to use every time. To automate this, cr
 
 **Paste this inside this file: ~/.ssh/config**
 ```text
-Host login.uni-freiburg.de
+Host ufr-login
     HostName login.uni-freiburg.de
     User <UserID>
     IdentityFile ~/.ssh/id_university
+    IdentitiesOnly yes
 ```
 
 ### Why this is the best setup:
@@ -91,6 +99,55 @@ Host login.uni-freiburg.de
 2. **Organization:** You know exactly which key is for which server.
 3. **Simplicity:** Your rsync commands will now work **instantly** without asking for a password, because the `config` file tells the computer: *"Whenever I connect to this university server, use the `id_university` key."*
 
+### Debug
+
+When you finish the ssh public key setup, test with:
+
+```bash
+ssh -vvv \
+  -o ControlMaster=no \
+  -o ControlPath=none \
+  -o IdentitiesOnly=yes \
+  -i ~/.ssh/id_university \
+  -o PreferredAuthentications=publickey \
+  -o PasswordAuthentication=no \
+  -o KbdInteractiveAuthentication=no \
+  -o GSSAPIAuthentication=no \
+  <UserID>@login.uni-freiburg.de
+```
+
+or without interference from `~/.ssh/config`:
+
+```bash
+ssh -F /dev/null -vvv \
+  -o IdentitiesOnly=yes \
+  -i ~/.ssh/id_university \
+  -o PreferredAuthentications=publickey \
+  -o PasswordAuthentication=no \
+  -o KbdInteractiveAuthentication=no \
+  -o GSSAPIAuthentication=no \
+  <UserID>@login.uni-freiburg.de
+```
+
+And look for things like
+- debug1: Offering public key: ...
+- debug1: Server accepts key: ...
+- debug1: Authentication succeeded (publickey).
+
+If you found them, you are good to go. If not, keep look for traces. Sometimes, you might not grant the files enough rights. In the local device, these rights are required. Setup with:
+
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/config
+chmod 600 ~/.ssh/id_university
+chmod 644 ~/.ssh/id_university.pub
+```
+
+In the server:
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
 ## Step 2: pool papers from both computers into the server.
 
 First, turn on the Zotero sync without file inside the Zotero program. (Edit > Settings > Sync > Login your Zotero account > ✅ Sync automatically & [ ] Sync attachment files in My Library using Zotero) 
@@ -158,7 +215,7 @@ Then, input your uni account password to the prompt.
 alias zpull='rsync -avz --progress --no-perms --no-owner --no-group --delete user@server:/home/user/storage/ ~/Zotero/storage/'
 
 # Sync FROM Local TO Server (End of session)
-alias zpush='rsync -avz -- progress --no-perms --no-owner --no-group --delete ~/Zotero/storage/ user@server:/home/user/storage/'
+alias zpush='rsync -avz --progress --no-perms --no-owner --no-group --delete ~/Zotero/storage/ user@server:/home/user/storage/'
 ```
 
 # For Windows users
