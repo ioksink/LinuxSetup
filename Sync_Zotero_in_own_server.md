@@ -212,10 +212,12 @@ Then, input your uni account password to the prompt.
 **Recommended Aliases for your `.zshrc` or `.bashrc`:**
 ```bash
 # Sync FROM Server TO Local (Start of session)
-alias zpull='rsync -avz --progress --no-perms --no-owner --no-group --delete user@server:/home/user/storage/ ~/Zotero/storage/'
+# PULL: Server TO Local Zotero storage
+alias zpull='rsync -avz --progress --no-perms --no-owner --no-group --delete -e "ssh -i ~/.ssh/id_university -o IdentitiesOnly=yes -o PreferredAuthentications=publickey" <UserID>@login.uni-freiburg.de:/home/<UserID>/Zotero_storage/ ~/Zotero/storage/'
 
 # Sync FROM Local TO Server (End of session)
-alias zpush='rsync -avz --progress --no-perms --no-owner --no-group --delete ~/Zotero/storage/ user@server:/home/user/storage/'
+# PUSH: Local Zotero storage TO Server
+alias zpush='rsync -avz --progress --no-perms --no-owner --no-group --delete -e "ssh -i ~/.ssh/id_university -o IdentitiesOnly=yes -o PreferredAuthentications=publickey" ~/Zotero/storage/ <UserID>@login.uni-freiburg.de:/home/yk112/Zotero_storage/'
 ```
 
 # For Windows users
