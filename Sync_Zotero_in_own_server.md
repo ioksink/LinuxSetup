@@ -1,8 +1,8 @@
 # Merging two (or more) Zotero in server
 
-If you already have Zotero in your computers, the build-in Zotero sync can sometimes create fake links of attached file on your computers. That is because the build-in sync function only syncs the local file location, which means the file is only in one device locally. Here, I would like to guide you through a solution using the free build-in Zotero sync for metadata and self-arranged server to sync attached files.
+If you already have Zotero in your computers, the build-in Zotero sync can sometimes create fake links of attached file on your computers. That is because the build-in sync function only syncs the local file locations, which means the file is only in one device **locally**. Here, I would like to guide you through a solution using the free build-in Zotero sync for metadata and self-arranged server to sync attached files.
 
-Any server type or NAS can also do the job. However, I am using the samba server provided by the university as the bidirectional backup storage of my own Zotero library between a debian linux working desktop and a fedora linux personal laptop. The server is logged-in on both computers (guideline for the uni Freiburg samba server is in [Uni-Freiburg-service.md](Uni-Freiburg-service.md).
+Any server type or NAS can do the job. I am using the samba server provided by the university as the bidirectional backup storage of my own Zotero library between a debian linux working desktop and a fedora linux personal laptop. (guideline for the uni Freiburg samba server is in [Uni-Freiburg-service.md](Uni-Freiburg-service.md).
 
 ## ⚠️ The Golden Rule of Zotero
 **Never put your active Zotero database folder directly on the NAS.** 
@@ -79,8 +79,10 @@ Because you gave the key a custom name, you need to tell the server to use it.
 
 **Step A: Copy the new key to the server**
 ```bash
-ssh-copy-id -i ~/.ssh/id_university.pub <UserID@login.uni-freiburg.de
+ssh-copy-id -i ~/.ssh/id_university.pub <UserID>@login.uni-freiburg.de
 ```
+
+You will find the public key (the text inside id_university.pub) in `~/.ssh/authorized_keys` in the server.
 
 **Step B: Tell SSH to use this key automatically**
 You don't want to tell `rsync` which key to use every time. To automate this, create (or edit) a file called `config` in your `.ssh` folder:
@@ -101,7 +103,7 @@ Host ufr-login
 
 ### Debug
 
-When you finish the ssh public key setup, test with:
+When you finish the ssh public key setup, test with a clean connection:
 
 ```bash
 ssh -vvv \
@@ -134,7 +136,9 @@ And look for things like
 - debug1: Server accepts key: ...
 - debug1: Authentication succeeded (publickey).
 
-If you found them, you are good to go. If not, keep look for traces. Sometimes, you might not grant the files enough rights. In the local device, these rights are required. Setup with:
+If you find them or the connection does not request password anymore, you are good to go. 
+
+If not, keep look for traces. Sometimes, you might not grant the files enough rights. In the local device, these rights are required. Setup with:
 
 ```bash
 chmod 700 ~/.ssh
@@ -148,9 +152,11 @@ In the server:
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
+Still confused? Feed the debug messages to an AI client.
+
 ## Step 2: pool papers from both computers into the server.
 
-First, turn on the Zotero sync without file inside the Zotero program. (Edit > Settings > Sync > Login your Zotero account > ✅ Sync automatically & [ ] Sync attachment files in My Library using Zotero) 
+First, turn on the Zotero sync without file sync inside the Zotero program. (Edit > Settings > Sync > Login your Zotero account > ✅ Sync automatically & [ ] Sync attachment files in My Library using Zotero) 
 
 ### What you are going to do:
 
