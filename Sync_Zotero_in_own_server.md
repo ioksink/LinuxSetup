@@ -42,6 +42,7 @@ Now you can use sshpass. You can either directly show your password in every usa
 
 ### Generate special SSH key for connection (safer)
 
+> **After several trials, the uni server still requires at least one password login per day even with ssh public key setups.**
 Alternatively, use `ssh-keygen`.
 1. Generate a key in the prompt `ssh-keygen -t ed25519`
 2. Name the key. For example, "id_university". (More explanation below.)
