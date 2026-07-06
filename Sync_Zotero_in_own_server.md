@@ -260,6 +260,13 @@ To avoid conflicts, follow this simple habit:
 *   **$\rightarrow$ When you START working:** Open FreeFileSync $\rightarrow$ Click **Compare** $\rightarrow$ Click **Synchronize**. (This pulls new papers from the NAS to your laptop).
 *   **$\leftarrow$ When you FINISH working:** Open FreeFileSync $\rightarrow$ Click **Compare** $\rightarrow$ Click **Synchronize**. (This pushes your new papers to the NAS).
 
+## Alternatives
+
+[Syncthing](https://syncthing.net/)
+
+[SyncFolder](https://apps.microsoft.com/detail/9nc73mjwhsww?hl=de-DE&gl=AT)
+
+... or any other syncing tool that supports "block-level" sync, where only the modified parts of a large file are transferred.
 
 ## Quick Summary Table
 
