@@ -55,13 +55,50 @@ Connect via login
 
 在校園網路中，提供AI服務。非連結校園網路時，必須使用學校提供的VPN連到校園網路。
 
-學校提供的使用者界面為[OpenWebUI](https://openwebui.uni-freiburg.de/)，登入時會跳轉到大學帳戶的登入畫面。在該界面左下角的齒輪符號（設定）內可以找到一組API碼，該組字串可應用於第三方服務，但因為OpenWebUi與一般OpenAI帳號結構不同，該組字串不可用於OpenAI的codex終端機服務界面。
+學校提供的使用者界面為[OpenWebUI](https://openwebui.uni-freiburg.de/)網頁，登入時會跳轉到大學帳戶的登入畫面。一般使用者可以直接使用該網頁向AI諮詢。
 
-Within Uni network, chatGPT and Mistral models are provided in [OpenWebUI](https://openwebui.uni-freiburg.de/)
+欲在其他工具或平台上使用本服務，可以在該界面左下角的齒輪符號（設定）內找到一組API碼，該組字串可應用於第三方服務，但因為OpenWebUi與一般OpenAI帳號結構不同，該組字串不可用於OpenAI的codex終端機服務界面。例如，在文字編輯器vscode使用[Continue.dev](https://www.continue.dev/)提供的[工具](https://marketplace.visualstudio.com/items?itemName=Continue.continue)，或是類似的開源編輯器[codium](https://open-vsx.org/extension/Continue/continue)時，須將AI模型的資訊寫入設定檔案中。
+
+- 基礎 URL (Base URL) = `https://openwebui.uni-freiburg.de/api`
+- 您可以使用以下終端機指令來查看模型名稱列表：`bash curl -L -v -H "Authorization: Bearer [api_key]" -H "Accept: application/json" https://openwebui.uni-freiburg.de/api/models >> openwebui.json`。此指令會產生一個 `openwebui.json` 檔案，請使用文字編輯器開啟該檔案，並在輸出結果中尋找 `id` 欄位。
+
+若要在 [vscode](https://marketplace.visualstudio.com/items?itemName=Continue.continue) 或 [codium](https://open-vsx.org/extension/Continue/continue) 中使用 [Continue.dev](https://www.continue.dev/) 擴充功能，請點擊視窗左側的「Continue」分頁，然後依序點擊「Configs」與「Main Config」。這會在編輯面板中開啟 `config.yaml` 檔案，請將該檔案設定為以下格式：
+
+```json
+  - name: "UFR: Standard Chat"
+    provider: openai
+    model: "standard-chat-ufr"
+    apiBase: https://openwebui.uni-freiburg.de/api
+    apiKey: sk-your-api-key-here
+    roles:
+      - chat
+      - edit
+      - apply
+```
+
+設定完成後，請回到「Continue」分頁中的首頁嘗試進行對話，確保設定運行順暢。請務必確認本機位於大學網路之下或使用VPN。
+
+Within Uni network, chatGPT and Mistral models are provided in [OpenWebUI](https://openwebui.uni-freiburg.de/). The base URL from OpenWebUI is different from normal OpenAI accounts (one could register a personal account to use ChatGPT). Therefore, OpenAI official client "codex" would not accept the API key from the OpenWebUI settings.
 
 API key can be retrieved from the setting of the webpage and used in tools such as vscode extensions.
 - Base URL = https://openwebui.uni-freiburg.de/api
-- List of model names can be found via `bash curl -L -v -H "Authorization: Bearer [api_key]" -H "Accept: application/json" https://openwebui.uni-freiburg.de/api/models >> openwebui.json`. Look for "id" in the output file `openwebui.json`. 
+- List of model names can be found via command in terminal `bash curl -L -v -H "Authorization: Bearer [api_key]" -H "Accept: application/json" https://openwebui.uni-freiburg.de/api/models >> openwebui.json`. The command generates a "openwebui.json" file. Open the file in a text editor and look for "id" in the output file `openwebui.json`. 
+
+To use [Continue.dev](https://www.continue.dev/) extension in [vscode](https://marketplace.visualstudio.com/items?itemName=Continue.continue) or [codium](https://open-vsx.org/extension/Continue/continue), go to "Continue" tab on the left side of the window, click "Configs" and "Main Config". You will open up the config.yaml file in active text editor panel. The config.yaml file should be set as the following format:
+
+```json
+  - name: "UFR: Standard Chat"
+    provider: openai
+    model: "standard-chat-ufr"
+    apiBase: https://openwebui.uni-freiburg.de/api
+    apiKey: sk-your-api-key-here
+    roles:
+      - chat
+      - edit
+      - apply
+```
+
+Please make sure the device is under university internet when using the service.
 
 ## 校內儲存伺服器 Connecting to my account at the Uni storage server (Netzlaufwer)
 
