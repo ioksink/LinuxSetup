@@ -1,6 +1,6 @@
 # Current system setup
 
-[fastfetch screenshot](fastfetch-20260805.png)
+[fastfetch screenshot](https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg?raw=true)
 
 # GNOME Tweak
 Fonts
