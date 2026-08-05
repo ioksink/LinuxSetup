@@ -2,6 +2,8 @@
 
 ![fastfetch screenshot](https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg?raw=true)
 
+<img alt="fastfetch screenshot" src="https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg">
+
 # GNOME Tweak
 Fonts
 - Interface Text: Lucida Sans Unicode
