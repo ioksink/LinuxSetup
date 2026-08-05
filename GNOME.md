@@ -1,8 +1,6 @@
 # Current system setup
 
-![fastfetch screenshot](https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg?raw=true "fastfetch-screenshot")
-
-<img alt="fastfetch screenshot" src="https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg">
+![fastfetch screenshot from my current laptop](festfetch-20260805.png "Fastfetch Screenshot")
 
 # GNOME Tweak
 Fonts
