@@ -1,6 +1,6 @@
 # Current system setup
 
-![fastfetch screenshot from my current laptop](festfetch-20260805.png "Fastfetch Screenshot")
+![fastfetch screenshot from my current laptop](./fastfetch-20260805.png "Fastfetch Screenshot")
 
 # GNOME Tweak
 Fonts
