@@ -1,3 +1,7 @@
+# Current system setup
+
+[fastfetch screenshot](fastfetch-20260805.png)
+
 # GNOME Tweak
 Fonts
 - Interface Text: Lucida Sans Unicode
@@ -15,6 +19,10 @@ Managed by GNOME extesion manager
 - Date Menu Formatter
 - WeatherPanel
 - Dash to Dock
+
+## Background/Wallpapers
+
+The wallpapers added by the users are in `~/.local/share/backgrounds`, no special permission required. The default distro backgrounds and gnome backgrounds are in `/usr/share/backgrounds/`, making changes to this folder would require admin authority.
 
 # VPN
 All of them can be connected with openVPN intergrated in GNOME network manager interface
