@@ -1,6 +1,6 @@
 # Current system setup
 
-![fastfetch screenshot](https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg?raw=true)
+![fastfetch screenshot](https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg?raw=true "fastfetch-screenshot")
 
 <img alt="fastfetch screenshot" src="https://github.com/ioksink/LinuxSetup/blob/master/fastfetch-20260805.jpg">
 
