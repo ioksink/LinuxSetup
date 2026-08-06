@@ -80,6 +80,8 @@ Connect via login
 
 首先，先下載這個程式，打開編輯這個檔案。裡面寫的這個檔案位置`~/.continue/config.yaml`是linux裡面通用的路徑，windows使用者需要從continue extension裡面開啟Configs側欄，點選Main Config旁邊的齒輪就會打開config.yaml。右鍵點擊編輯器上面的檔名，選擇「打開檔案位置」，找到該檔案的位置並且打開這個script，將`~/.continue/config.yaml`更改為正確的路徑。同時，使用者必須將自己的API-key寫進這個script第十行的OPENWEBUI_TOKEN。設定完成後，請回到「Continue」分頁中的首頁嘗試進行對話，確保設定運行順暢。請務必確認本機位於大學網路之下或使用VPN。
 
+目前測試情況： **UFR開頭的model可以正常使用，但openAI開頭的會有handling error**
+
 Within Uni network, chatGPT and Mistral models are provided in [OpenWebUI](https://openwebui.uni-freiburg.de/). The base URL from OpenWebUI is different from normal OpenAI accounts (one could register a personal account to use ChatGPT). Therefore, OpenAI official client "codex" would not accept the API key from the OpenWebUI settings.
 
 API key can be retrieved from the setting of the webpage and used in tools such as vscode extensions.
@@ -107,6 +109,8 @@ First, download the python code to your local device and open the file with a te
 After setup everything with the script, run the python code in whichever way you like or simply `python3 update_models.py` in terminal.
 
 Please make sure the device is under university internet when using the service.
+
+Current tested situation: **Models that has its name starting with UFR works just fine, whereas models starting with OpenAI has handling error in this agent. It may be caused by incompatibility between OpenAI and OpenWebUI.**
 
 ## 校內儲存伺服器 Connecting to my account at the Uni storage server (Netzlaufwerk)
 
