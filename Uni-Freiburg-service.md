@@ -1,20 +1,20 @@
 # 帳號設定 Uni Freiburg myAccount
 
-在完成首次註冊後，你會收到學校寄來的帳號密碼通知信，故事從這裡開始。以下將你收到的帳號（英文與數字組合）以 [你的帳號] 或 [Username] 表示。
+在完成首次註冊後，你會收到學校寄來的帳號密碼通知信，故事從這裡開始。以下將你收到的帳號（英文與數字組合）以 \[你的帳號\] 或 \[Username\] 表示。
 
-The story begins after you receive your account credentials via email following your first immatriculation. Replace [Username] with the username from this account throughout this manual.
+The story begins after you receive your account credentials via email following your first immatriculation. Replace \[Username\] with the username from this account throughout this manual.
 
 # 網路 Network
 
 ## 無線網路設定 Wifi/WLAN
 
-在最初收到的信件中，帳號由學校提供，密碼則需進入 myAccount 自行設定。在學校的帳號管理網站 [myAccount](https://myaccount.uni-freiburg.de/uadmin/login) 中，你也可以設定泛歐洲科研與教育網路協會的學術無線網路 eduroam 的密碼。eduroam 的帳號固定為 [你的帳號]@uni-freiburg.de。
+在最初收到的信件中，帳號由學校提供，密碼則需進入 myAccount 自行設定。在學校的帳號管理網站 [myAccount](https://myaccount.uni-freiburg.de/uadmin/login) 中，你也可以設定泛歐洲科研與教育網路協會的學術無線網路 eduroam 的密碼。eduroam 的帳號固定為 \[你的帳號\]@uni-freiburg.de。
 
 學校提供的網路說明文件入口網站：[德文版 WLAN an der Universität Freiburg](https://www.rz.uni-freiburg.de/de/services/netztel/wlan-vpn) 與 [英文版 WLAN at Freiburg University](https://www.rz.uni-freiburg.de/en/services/netztel-en/wlan-vpn-en?set_language=en)。該頁面也提供非大學成員的訪問使用指引。
 
 關於 eduroam 的設定說明文件 [WLAN mit eduroam](https://wiki.uni-freiburg.de/rz/doku.php?id=wlan-eduroam)，請依照你的設備系統類型參考相應步驟進行設定。
 
-In the initial email, the username is provided by the university, while the password must be set by yourself in myAccount. In the university account management portal [myAccount](https://myaccount.uni-freiburg.de/uadmin/login), you can also set the password for eduroam, the academic wireless network of the pan-European research and education networking association. The eduroam username is always [Username]@uni-freiburg.de.
+In the initial email, the username is provided by the university, while the password must be set by yourself in myAccount. In the university account management portal [myAccount](https://myaccount.uni-freiburg.de/uadmin/login), you can also set the password for eduroam, the academic wireless network of the pan-European research and education networking association. The eduroam username is always \[Username\]@uni-freiburg.de.
 
 The university provides network documentation portals: [German version WLAN an der Universität Freiburg](https://www.rz.uni-freiburg.de/de/services/netztel/wlan-vpn) and [English version WLAN at Freiburg University](https://www.rz.uni-freiburg.de/en/services/netztel-en/wlan-vpn-en?set_language=en). These pages also provide usage guidelines for non-university members.
 
@@ -28,11 +28,11 @@ For eduroam setup instructions, please refer to [WLAN mit eduroam](https://wiki.
 - 認證方式 Authentication: PEAP
 - 網域 Domain: uni-freiburg.de
 - CA 憑證 CA certificate: (無 None)
-- [v] 不需要 CA 憑證 No CA certificate is required
+- \[v\] 不需要 CA 憑證 No CA certificate is required
 - PEAP 版本 PEAP version: 自動 Automatic
 - 內部認證 Inner authentication: MSCHAPv2
-- 使用者名稱 Username: [你的帳號]@uni-freiburg.de
-- 密碼 Password: [你在 myAccount 中設定的密碼 The one you set in myAccount]
+- 使用者名稱 Username: \[你的帳號\]@uni-freiburg.de
+- 密碼 Password: \[你在 myAccount 中設定的密碼 The one you set in myAccount\]
 
 ## VPN
 
@@ -56,7 +56,7 @@ According to the Beratung Rechenzentrum der Universität Freiburg, `openconnect`
 
 - VPN 協定 VPN Protocol: Fortinet SSL VPN
 - 閘道器 Gateway: fortivpn.uni-freiburg.de
-- 使用者代理 User Agent: [你的帳號]@email.uni-freiburg.de
+- 使用者代理 User Agent: \[你的帳號\]@email.uni-freiburg.de
 - CA 憑證 CA certificate: (無 none)
 
 **軟體權杖認證 Software Token Authentication:**
@@ -65,14 +65,43 @@ According to the Beratung Rechenzentrum der Universität Freiburg, `openconnect`
 
 **透過登入連線 Connect via login:**
 
-- 使用者 User: [你的帳號]@uni-freiburg.de
-- 密碼 Password: [eduroam 密碼 eduroam password]
+- 使用者 User: \[你的帳號\]@uni-freiburg.de
+- 密碼 Password: \[eduroam 密碼 eduroam password\]
 
 # 校內網路服務 Intranet Services
 
-## AI 服務 AI Service
+## AI/KI Service
 
 在校園網路中，學校提供 AI 服務。未連線校園網路時，必須使用學校提供的 VPN 連線至校園網路。
+
+**Update: 從31.07.2026起，每人每天只能使用\$20價值的用量。From 31.07.2026 onwards, \$20 limit is applied to every uni account per day.**
+
+Externe modelle
+
+| Anbieter  | Modell        | input | output |
+|-----------|---------------|-------|--------|
+| OpenAI    | GPT 5.6 Sol   | \$5   | \$30   |
+|           | GPT 5.6 Terra | \$2   | \$12   |
+|           | GPT 5.6 Luna  | \$0.2 | \$1.2  |
+| MistralAI | Mistral Large | \$0.5 | \$1.5  |
+|           | Codestral     | \$0.3 | \$0.9  |
+
+Lokale Modelle
+
++------------------------+-------+--------+
+| Modell                 | input | output |
++========================+=======+========+
+| GLM 5.2\               | \$0.4 | \$0.4  |
+| ufr/coding-complex     |       |        |
++------------------------+-------+--------+
+| Qwen 3.5 397b\         | \$0.1 | \$0.1  |
+| ufr/reasoning-complex\ |       |        |
+| ufr/vision-complex     |       |        |
++------------------------+-------+--------+
+
+對於資料中心在其自有硬體上運作的模型，採用基於所需硬體和電力資源的名目價格。目前，每個使用的 GPU 收費 0.05 美分（GLM 5.2 \> 8 個 GPU：每百萬代幣輸入 0.40 美元 / 輸出 0.40 美元）。
+
+Bei Modellen, die vom RZ auf eigener Hardware betrieben werden, wird ein fiktiver Preis gemäß der benötigten Hardware und Stromressourcen verwendet. Aktuell wird pro verwendeter GPU ein Preis von ¢0,05 verbucht (GLM 5.2 \> 8 GPUs: Input \$0,40 / Output \$0,40 pro Mio Token).
 
 學校提供的使用者介面為 [OpenWebUI](https://openwebui.uni-freiburg.de/) 網頁，登入時會跳轉至大學帳戶的登入畫面。一般使用者可以直接使用該網頁向 AI 諮詢。
 
@@ -92,7 +121,7 @@ To use this service in other tools or platforms, you can find an API key in the 
 
 To use the [Continue.dev](https://www.continue.dev/) extension in [VSCode](https://marketplace.visualstudio.com/items?itemName=Continue.continue) or [Codium](https://open-vsx.org/extension/Continue/continue), click on the "Continue" tab on the left side of the window, then click "Configs" and "Main Config" in sequence. This will open the `config.yaml` file in the editor panel. Set the file to the following format:
 
-```yaml
+``` yaml
   - name: "UFR: Standard Chat"
     provider: openai
     model: "standard-chat-ufr"
@@ -103,6 +132,51 @@ To use the [Continue.dev](https://www.continue.dev/) extension in [VSCode](https
       - edit
       - apply
 ```
+
+### Agent file system tools
+
+When asking the AI agent to complete tasks in the local file system, a local MCP server is required.
+
+Go to the setting of cotinue.dev extension side panel, navigate to "Tools", and see if there is anything under the header "MCP Servers". If not, click on the "+" sign. It creates and opens up a YAML file. Edit the file according to your environment.
+
+``` yaml
+name: New MCP server
+version: 0.0.1
+schema: v1
+
+mcpServers:
+  - name: filesystem
+    command: npx
+    args:
+      - -y
+      - @modelcontextprotocol/server-filesystem
+      - /home/USERNAME/DIRECTORY
+    env: {}
+```
+
+Type `which npx` and check if `npx` is in PATH. Or simply, copy and paste the absolute path produced by `which npx`.
+
+Put the path of your project's directory in `/home/USERNAME/DIRECTORY`. The filesystem server can usually accept multiple directories, but if one of those folders doesn't exist, the server may fail.
+
+Another option is to call the npx through bash commands.
+
+``` yaml
+name: New MCP server
+version: 0.0.1
+schema: v1
+
+mcpServers:
+  - name: filesystem
+    command: /bin/bash
+    args:
+      - -lc
+      - source /home/USERNAME/.nvm/nvm.sh && npx -y @modelcontextprotocol/server-filesystem /home/USERNAME/DIRECTORY
+    env: {}
+```
+
+This explicitly loads `nvm` before running `npx`, which works better for my environment.
+
+### Receive model names
 
 學校或 OpenAI 會定期更新、更名 OpenWebUI 裡面使用的模型，因此必須不定時使用 [這個腳本](update_models.py) 更新 agent 裡面註冊的模型。這個腳本會直接覆寫 `~/.continue/config.yaml` 裡面的內容。
 
@@ -144,9 +218,9 @@ Input in the text box: `smb://[Username].files.uni-freiburg.de/home/[Username]`
 
 A window will appear. Please enter the following information:
 
-- 使用者名稱 Username: [你的帳號]@uni-freiburg.de
+- 使用者名稱 Username: \[你的帳號\]@uni-freiburg.de
 - 網域 Domain: PUBLIC
-- 密碼 Password: [eduroam 密碼 eduroam-password]
+- 密碼 Password: \[eduroam 密碼 eduroam-password\]
 
 ## BwUniCluster（仍在進行中 Still Working on It!）
 
@@ -160,7 +234,7 @@ Read the [manual](https://wiki.bwhpc.de/e/Main_Page) to register and use the ser
 
 ### 1. 使用 SSH 登入 Login with SSH
 
-```bash
+``` bash
 ssh [你的帳號]@uc3.scc.kit.edu
 ```
 
@@ -180,7 +254,7 @@ Input the OTP code and your password through the prompt.
 
 **Shell 腳本範例 Shell script example:**
 
-```bash
+``` bash
 # .bash_profile Contents
 module load math/R/4.5.1
 module load compiler/gnu/14.2
@@ -205,27 +279,11 @@ module load devel/miniforge/25.3.1-python-3.12
 - 我的 R 程式碼提交腳本範例
 - My submitting script template for R code
 
-```bash script.sh
-#!/bin/bash
-#
-#SBATCH --partition=dev_cpu
-#SBATCH --job-name=myJob
-#SBATCH --time=00:20:00
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=16
-#SBATCH --error=error.log
-#SBATCH --mem=32gb
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=yk112@email.uni-freiburg.de
+\`\`\`bash script.sh #!/bin/bash \# #SBATCH --partition=dev_cpu #SBATCH --job-name=myJob #SBATCH --time=00:20:00 #SBATCH --nodes=1 #SBATCH --ntasks-per-node=1 #SBATCH --cpus-per-task=16 #SBATCH --error=error.log #SBATCH --mem=32gb #SBATCH --mail-type=ALL #SBATCH --mail-user=yk112\@email.uni-freiburg.de
 
-module load math/R/4.5.1
-module load compiler/gnu/14.2
-module load devel/miniforge/25.3.1-python-3.12
-conda activate r_ragg_env
+module load math/R/4.5.1 module load compiler/gnu/14.2 module load devel/miniforge/25.3.1-python-3.12 conda activate r_ragg_env
 
-Rscript rcode.r 2>&1 | tee run.log
-```
+Rscript rcode.r 2\>&1 \| tee run.log \`\`\`
 
 bash 腳本必須在腳本開頭指明 bash 語言的位置 `#!/bin/bash`。此路徑適用於所有 Linux 環境。接著，我向叢集排隊工具 SBATCH 介紹此工作的詳細資訊。我要求 SBATCH 將腳本帶至 `dev_cpu` 叢集（請根據你的需求 [在此選擇](https://wiki.bwhpc.de/e/BwUniCluster3.0/Running_Jobs#Regular_Queues) 叢集，或使用指令 `sinfo_t_idle` 檢查目前哪個叢集處於閒置狀態）。
 
@@ -258,12 +316,11 @@ The script loads R version 4.5.1, C compiler, Python version 3.12, and conda env
 
 # 學校信箱設定 Uni Freiburg Email Third-Party Client Setup
 
-> 2025-09-24 發布於台灣 Freiburg 同學會，英文說明如下
-> Published on 2025-09-24 at Taiwan Freiburg Student Association, English version below
+> 2025-09-24 發布於台灣 Freiburg 同學會，英文說明如下 Published on 2025-09-24 at Taiwan Freiburg Student Association, English version below
 
-由於最近重新設定了電腦，重新在電腦的信箱程式裡面登入學校信箱，想起第一次設定的惡夢，供新年度同學們參考。一開始當然可以直接前往 email.uni-freiburg.de 這個網站（也就是 @ 之後的那一串網址），用網頁登入學校信箱。但是要設定到電腦跟手機裡面超級頭痛。
+由於最近重新設定了電腦，重新在電腦的信箱程式裡面登入學校信箱，想起第一次設定的惡夢，供新年度同學們參考。一開始當然可以直接前往 email.uni-freiburg.de 這個網站（也就是 \@ 之後的那一串網址），用網頁登入學校信箱。但是要設定到電腦跟手機裡面超級頭痛。
 
-Since I recently reconfigured my computer and logged into the university email through the email client again, I recalled the nightmare of the first setup. This guide is for new students' reference. Of course, you can directly go to the website email.uni-freiburg.de (the part after @ in your email address) and log in to the university email via the webpage. However, setting it up on your computer and mobile phone is somehow troublesome.
+Since I recently reconfigured my computer and logged into the university email through the email client again, I recalled the nightmare of the first setup. This guide is for new students' reference. Of course, you can directly go to the website email.uni-freiburg.de (the part after \@ in your email address) and log in to the university email via the webpage. However, setting it up on your computer and mobile phone is somehow troublesome.
 
 首先，你要前往哥廷根大學的系統（[GWDG IDM 入口網站](https://idm.gwdg.de/Account/Login?ReturnUrl=%2F)）申請一組使用者名稱以及密碼。這個系統使用學校帳密登入，然後需要下載 eduMFA Authenticator 到手機，進行二段式認證登入。
 
@@ -281,21 +338,21 @@ Log in with your university email (requires two-factor authentication).
 
 Click on the top-right corner avatar to toggle the list. Choose the second option with a key icon.
 
-在左側面板中，選擇 [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS（需要再次進行二段式認證）。
+在左側面板中，選擇 \[DE\] APP-ZUGANGSDATEN / \[EN\] APPLICATION CREDENTIALS（需要再次進行二段式認證）。
 
-In the left panel, choose [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS (requires two-factor authentication again).
+In the left panel, choose \[DE\] APP-ZUGANGSDATEN / \[EN\] APPLICATION CREDENTIALS (requires two-factor authentication again).
 
 在 Open-Xchange 下方，點擊 "ADD +" 申請使用者名稱和密碼。這組 uid 和密碼用於電子郵件伺服器設定。
 
 Under Open-Xchange, click "ADD +" to apply for a username and password. This uid and password are used for email server setup.
 
-在左側選單選擇 [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS，為這個連結取個名字（Bezeichnung）跟使用期限（Ablaufdatum）之後，就會產生一組帳號密碼（uid & Passwort）。右邊各有一個複製貼上按鈕，一定要開個編輯器馬上存起來，離開頁面就再也看不到這組帳密了。
+在左側選單選擇 \[DE\] APP-ZUGANGSDATEN / \[EN\] APPLICATION CREDENTIALS，為這個連結取個名字（Bezeichnung）跟使用期限（Ablaufdatum）之後，就會產生一組帳號密碼（uid & Passwort）。右邊各有一個複製貼上按鈕，一定要開個編輯器馬上存起來，離開頁面就再也看不到這組帳密了。
 
-In the left panel, select [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS. After giving this credential a name (Bezeichnung) and an expiration date (Ablaufdatum), a username and password (uid & Passwort) will be generated. There are copy buttons on the right side for each. You must open a text editor and save them immediately—you will not be able to see this credential again after leaving the page.
+In the left panel, select \[DE\] APP-ZUGANGSDATEN / \[EN\] APPLICATION CREDENTIALS. After giving this credential a name (Bezeichnung) and an expiration date (Ablaufdatum), a username and password (uid & Passwort) will be generated. There are copy buttons on the right side for each. You must open a text editor and save them immediately—you will not be able to see this credential again after leaving the page.
 
-另外要說明，學校帳號跟名字連在一起是兩個信箱名稱的「同義詞」。以我的帳號來說，yk112 跟 yu-chen.kuo 都是同一個信箱的名字。你可以在裡面設定 Information > Primäre E-Mail-Adresse 擇一。預設是名字的那個。可能只有像我在入學前有更改過護照拼寫，會偏好使用學校帳號的那個信箱名稱。
+另外要說明，學校帳號跟名字連在一起是兩個信箱名稱的「同義詞」。以我的帳號來說，yk112 跟 yu-chen.kuo 都是同一個信箱的名字。你可以在裡面設定 Information \> Primäre E-Mail-Adresse 擇一。預設是名字的那個。可能只有像我在入學前有更改過護照拼寫，會偏好使用學校帳號的那個信箱名稱。
 
-Additionally, please note that your university username and your name combined are two alias names for the same email account. For example, both yk112 and yu-chen.kuo are my usernames for the my university email. You can set your preferred primary email address under Information > Primäre E-Mail-Adresse. The default is the name-based one. Perhaps only those like me, who changed their passport spelling before enrollment, would prefer to use the username-based email address.
+Additionally, please note that your university username and your name combined are two alias names for the same email account. For example, both yk112 and yu-chen.kuo are my usernames for the my university email. You can set your preferred primary email address under Information \> Primäre E-Mail-Adresse. The default is the name-based one. Perhaps only those like me, who changed their passport spelling before enrollment, would prefer to use the username-based email address.
 
 附帶一提，要跟學校更改學生證名字的方法是直接去註冊處二樓的外籍生櫃台，給他們看護照（或是其他證明文件）以及現有的學生證就可以申請。等幾天之後收到通知再去一樓領新的學生證。不需要繳費，但是要重新申請 SWFR 帳號以及 Autoload，不會自動轉移。
 
@@ -305,8 +362,8 @@ By the way, if you need to change the name on your student ID, go directly to th
 
 Getting back on track, now you can start setting up the login information on your device. Enter your email address on the login page of your chosen email client. The password is the one generated by the GWDG system.
 
-- 電子郵件 Email: [你的帳號]@email.uni-freiburg.de
-- 密碼 Password: [GWDG 產生的密碼 password from GWDG]
+- 電子郵件 Email: \[你的帳號\]@email.uni-freiburg.de
+- 密碼 Password: \[GWDG 產生的密碼 password from GWDG\]
 
 **收信伺服器 Incoming Server:**
 
@@ -314,13 +371,13 @@ Getting back on track, now you can start setting up the login information on you
 - 主機名稱 Hostname: email.uni-freiburg.de
 - 連接埠 Port: 993
 - 加密方式 Encryption: SSL/TLS
-- 使用者名稱 Username: [GWDG 申請到的帳號 uid from GWDG]
+- 使用者名稱 Username: \[GWDG 申請到的帳號 uid from GWDG\]
 
 **發信伺服器 Outgoing Server:**
 
 - 連接埠 Port: 587
 - 加密方式 Encryption: STARTTLS
-- 使用者名稱 Username: [GWDG 申請到的帳號 uid from GWDG]
+- 使用者名稱 Username: \[GWDG 申請到的帳號 uid from GWDG\]
 
 這樣就可以完成登入了。
 
