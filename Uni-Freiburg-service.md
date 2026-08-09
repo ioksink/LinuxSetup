@@ -181,7 +181,7 @@ Input the OTP code and your password through the prompt.
 **Shell 腳本範例 Shell script example:**
 
 ```bash
-# .bash_profile 內容 Contents
+# .bash_profile Contents
 module load math/R/4.5.1
 module load compiler/gnu/14.2
 module load devel/miniforge/25.3.1-python-3.12
@@ -247,7 +247,7 @@ The number of nodes depends on whether your code uses parallel computing. Since 
 
 腳本載入 R 版本 4.5.1、C 編譯器、Python 版本 3.12、conda 環境 r_ragg_env（這是我安裝 tidyverse 的環境）。這些是我經常使用的模組。然後，我們终于可以執行 R 腳本。執行 R 腳本時，如果有任何輸出（stdout），會建立文字檔案並將它們帶入目前資料夾中的 `run.log`。每次執行此程式碼時，run log 檔案會被覆寫。
 
-The script loads R version 4.5.1, C compiler, Python version 3.12, and conda environment r_ragg_env (this is the environment where I installed tidyverse). These are the modules I frequently use. Then, we can finally run the R script. When running the R script, if there is anything printed out (stdout), a text file will be created and saved as `run.log` in the current folder. The run log file will be overwritten every time this code is executed.
+The script loads R version 4.5.1, C compiler, Python version 3.12, and conda environment r_ragg_env (this is the environment where I installed tidyverse). These are the modules I frequently used. Then, we can finally run the R script. When running the R script, if there is anything printed out (stdout), a text file will be created and saved as `run.log` in the current folder. The run log file will be overwritten every time this code is executed.
 
 - 使用 `{bash} sbatch script.sh` 將此 bash 腳本提交至 SBATCH
 - 使用指令 `squeue` 檢查你自己的工作排隊
@@ -263,47 +263,11 @@ The script loads R version 4.5.1, C compiler, Python version 3.12, and conda env
 
 由於最近重新設定了電腦，重新在電腦的信箱程式裡面登入學校信箱，想起第一次設定的惡夢，供新年度同學們參考。一開始當然可以直接前往 email.uni-freiburg.de 這個網站（也就是 @ 之後的那一串網址），用網頁登入學校信箱。但是要設定到電腦跟手機裡面超級頭痛。
 
-Since I recently reconfigured my computer and logged into the university email through the email client again, I recalled the nightmare of the first setup. This guide is for new students' reference. Of course, you can directly go to the website email.uni-freiburg.de (the part after @ in your email address) and log in to the university email via the webpage. However, setting it up on your computer and mobile phone is extremely troublesome.
+Since I recently reconfigured my computer and logged into the university email through the email client again, I recalled the nightmare of the first setup. This guide is for new students' reference. Of course, you can directly go to the website email.uni-freiburg.de (the part after @ in your email address) and log in to the university email via the webpage. However, setting it up on your computer and mobile phone is somehow troublesome.
 
 首先，你要前往哥廷根大學的系統（[GWDG IDM 入口網站](https://idm.gwdg.de/Account/Login?ReturnUrl=%2F)）申請一組使用者名稱以及密碼。這個系統使用學校帳密登入，然後需要下載 eduMFA Authenticator 到手機，進行二段式認證登入。
 
 First, you need to go to the University of Göttingen's system ([GWDG IDM portal](https://idm.gwdg.de/Account/Login?ReturnUrl=%2F)) to apply for a username and password. This system requires logging in with your university credentials, then downloading eduMFA Authenticator to your mobile phone for two-factor authentication.
-
-在左側選單選擇 [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS，為這個連結取個名字（Bezeichnung）跟使用期限（Ablaufdatum）之後，就會產生一組帳號密碼（uid & Passwort）。右邊各有一個複製貼上按鈕，一定要開個編輯器馬上存起來，離開頁面就再也看不到這組帳密了。
-
-In the left panel, select [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS. After giving this credential a name (Bezeichnung) and an expiration date (Ablaufdatum), a username and password (uid & Passwort) will be generated. There are copy buttons on the right side for each. You must open a text editor and save them immediately—you will not be able to see this credential again after leaving the page.
-
-另外要說明，學校帳號跟名字連在一起是兩個信箱名稱的 Alias。以我的帳號來說，yk112 跟 yu-chen.kuo 都是同一個信箱的名字。你可以在裡面設定 Information > Primäre E-Mail-Adresse 擇一。預設是名字的那個。可能只有像我在入學前有更改過護照拼寫，會偏好使用學校帳號的那個信箱名稱。
-
-Additionally, please note that your university username and your name combined are two alias names for the same email account. For example, with my account, both yk112 and yu-chen.kuo are names for the same email inbox. You can set your preferred primary email address under Information > Primäre E-Mail-Adresse. The default is the name-based one. Perhaps only those like me, who changed their passport spelling before enrollment, would prefer to use the username-based email address.
-
-附帶一提，要跟學校更改學生證名字的方法是直接去註冊處二樓的外籍生櫃台，給他們看護照（或是其他證明文件）以及現有的學生證就可以申請。等幾天之後收到通知再去一樓領新的學生證。不需要繳費，但是要重新申請 SWFR 帳號以及 Autoload，不會自動轉移。
-
-By the way, if you need to change the name on your student ID, go directly to the international student counter on the second floor of the Registrar's Office. Show them your passport (or other supporting documents) and your current student ID to apply. After a few days, you will receive a notification to pick up your new student ID on the first floor. There is no fee, but you need to reapply for your SWFR account and Autoload—they will not be transferred automatically.
-
-扯遠了，總之現在可以開始在自己的裝置上面設定登入資訊了。在自己選擇的信箱程式登入頁面輸入信箱，密碼是 GWDG 系統產生的那個密碼。
-
-Getting back on track, now you can start setting up the login information on your device. Enter your email address on the login page of your chosen email client. The password is the one generated by the GWDG system.
-
-**收信伺服器 Incoming Server:**
-
-- 協定 Protocol: IMAP
-- 主機名稱 Hostname: email.uni-freiburg.de
-- 連接埠 Port: 993
-- 加密方式 Encryption: SSL/TLS
-- 使用者名稱 Username: [GWDG 申請到的帳號 uid from GWDG]
-
-**發信伺服器 Outgoing Server:**
-
-- 連接埠 Port: 587
-- 加密方式 Encryption: STARTTLS
-- 使用者名稱 Username: [GWDG 申請到的帳號 uid from GWDG]
-
-這樣就可以完成登入了。
-
-This completes the setup.
-
-## Uni Freiburg Email Third-Party Client Setup (ENG)
 
 進入 [GWDG IDM 入口網站](https://idm.gwdg.de/Account/Login?ReturnUrl=%2F)，選擇 "Anmeldung mit single sign-on"，然後點擊 "Anmelden"。
 
@@ -325,7 +289,21 @@ In the left panel, choose [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS (
 
 Under Open-Xchange, click "ADD +" to apply for a username and password. This uid and password are used for email server setup.
 
-### 以 Thunderbird 電子郵件客戶端為例 Take Thunderbird Email Client as Example:
+在左側選單選擇 [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS，為這個連結取個名字（Bezeichnung）跟使用期限（Ablaufdatum）之後，就會產生一組帳號密碼（uid & Passwort）。右邊各有一個複製貼上按鈕，一定要開個編輯器馬上存起來，離開頁面就再也看不到這組帳密了。
+
+In the left panel, select [DE] APP-ZUGANGSDATEN / [EN] APPLICATION CREDENTIALS. After giving this credential a name (Bezeichnung) and an expiration date (Ablaufdatum), a username and password (uid & Passwort) will be generated. There are copy buttons on the right side for each. You must open a text editor and save them immediately—you will not be able to see this credential again after leaving the page.
+
+另外要說明，學校帳號跟名字連在一起是兩個信箱名稱的「同義詞」。以我的帳號來說，yk112 跟 yu-chen.kuo 都是同一個信箱的名字。你可以在裡面設定 Information > Primäre E-Mail-Adresse 擇一。預設是名字的那個。可能只有像我在入學前有更改過護照拼寫，會偏好使用學校帳號的那個信箱名稱。
+
+Additionally, please note that your university username and your name combined are two alias names for the same email account. For example, both yk112 and yu-chen.kuo are my usernames for the my university email. You can set your preferred primary email address under Information > Primäre E-Mail-Adresse. The default is the name-based one. Perhaps only those like me, who changed their passport spelling before enrollment, would prefer to use the username-based email address.
+
+附帶一提，要跟學校更改學生證名字的方法是直接去註冊處二樓的外籍生櫃台，給他們看護照（或是其他證明文件）以及現有的學生證就可以申請。等幾天之後收到通知再去一樓領新的學生證。不需要繳費，但是要重新申請 SWFR 帳號以及 Autoload，不會自動轉移。
+
+By the way, if you need to change the name on your student ID, go directly to the international student counter on the second floor of the Registrar's Office. Show them your passport (or other supporting documents) and your current student ID to apply. After a few days, you will receive a notification to pick up your new student ID on the first floor. There is no fee, but you need to reapply for your SWFR account and Autoload—they will not be transferred automatically.
+
+扯遠了，總之現在可以開始在自己的裝置上面設定登入資訊了。在自己選擇的信箱程式登入頁面輸入信箱，密碼是 GWDG 系統產生的那個密碼。
+
+Getting back on track, now you can start setting up the login information on your device. Enter your email address on the login page of your chosen email client. The password is the one generated by the GWDG system.
 
 - 電子郵件 Email: [你的帳號]@email.uni-freiburg.de
 - 密碼 Password: [GWDG 產生的密碼 password from GWDG]
@@ -335,11 +313,15 @@ Under Open-Xchange, click "ADD +" to apply for a username and password. This uid
 - 協定 Protocol: IMAP
 - 主機名稱 Hostname: email.uni-freiburg.de
 - 連接埠 Port: 993
-- 加密方式: SSL/TLS
+- 加密方式 Encryption: SSL/TLS
 - 使用者名稱 Username: [GWDG 申請到的帳號 uid from GWDG]
 
 **發信伺服器 Outgoing Server:**
 
 - 連接埠 Port: 587
-- 加密方式: STARTTLS
+- 加密方式 Encryption: STARTTLS
 - 使用者名稱 Username: [GWDG 申請到的帳號 uid from GWDG]
+
+這樣就可以完成登入了。
+
+Complete!
