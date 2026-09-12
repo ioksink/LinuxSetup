@@ -1,4 +1,4 @@
-baseURL: "https://ioksink.github.io/LinuxSetup/"
+baseURL: "https://ioksink.github.io/MelissasNotebook/"
 locale: "en-uk"
 title: "Melissa's Notebook"
 theme: ["PaperMod"]
@@ -32,17 +32,23 @@ params:
 
 menu:
   main:
+    - name: "News"
+      url: /News/
+      weight: 10
     - name: "Uni Guide"
       url: /uni/
-      weight: 10
-    - name: Tech
-      url: /Linux/
       weight: 20
+    - name: "Linux&Tech"
+      url: /Linux/
+      weight: 30
     - name: Blog
       url: /Blog/
-      weight: 30
+      weight: 40
+    - name: Note
+      url: /Note/
+      weight: 50
 
 editPost:
-  URL: "https://github.com/ioksink/LinuxSetup/content"
+  URL: "https://github.com/ioksink/MelissasNotebook/content"
   Text: "Edit" # edit text
   appendFilePath: true # to append file path to Edit link
