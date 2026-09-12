@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/LinuxSetup/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LinuxSetup/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Linuxes | Melissa&#39;s Notebook</title>
+<meta name="keywords" content="">
+<meta name="description" content="Linuxes - Melissa&#39;s Notebook">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/LinuxSetup/linux/">
+<link crossorigin="anonymous" href="/LinuxSetup/assets/css/stylesheet.6b53f19b32540f5bd1239ed28bf0b6f24c934ea5a30e66afe9fa4df135a48e7f.css" integrity="sha256-a1PxmzJUD1vRI57Si/C28kyTTqWjDmav6fpN8TWkjn8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/LinuxSetup/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/LinuxSetup/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/LinuxSetup/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/LinuxSetup/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/LinuxSetup/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/LinuxSetup/linux/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/LinuxSetup/linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/LinuxSetup/linux/">
+  <meta property="og:site_name" content="Melissa&#39;s Notebook">
+  <meta property="og:title" content="Linuxes">
+  <meta property="og:locale" content="en_uk">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linuxes">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Linuxes",
+      "item": "http://localhost:1313/LinuxSetup/linux/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/LinuxSetup/" accesskey="h" title="Melissa&#39;s Notebook (Alt + H)">Melissa&#39;s Notebook</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/LinuxSetup/uni/" title="Uni Guide">
+                    <span>Uni Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/LinuxSetup/linux/" title="Tech">
+                    <span class="active">Tech</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/LinuxSetup/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/LinuxSetup/">Home</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+  <h1>
+    Linuxes
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GNOME
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Current system setup GNOME Tweak Fonts
+Interface Text: Lucida Sans Unicode Document Text: SF Pro Display Monospace Text: Cascadia Code (FiraCode Nerd Font for terminal p10k theme) Appearance
+Cursor: Sunity-cursors Icons: Papirus-Dark Legacy Applications: Adwaita (default) GNOME Extensions Managed by GNOME extesion manager
+Just Perfection Date Menu Formatter WeatherPanel Dash to Dock Background/Wallpapers The wallpapers added by the users are in ~/.local/share/backgrounds, no special permission required. The default distro backgrounds and gnome backgrounds are in /usr/share/backgrounds/, making changes to this folder would require admin authority.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-08-08 00:00:00 +0000 UTC'>August 8, 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to GNOME" href="http://localhost:1313/LinuxSetup/linux/gnome/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Specs and expectations for my next laptop
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Current device Lenovo Yoga Slim 7 Carbon 14ACN6
+CPU: AMD Ryzen™ 7 5800U with Radeon™ Graphics × 16 16G RAM 1TB SSD Looking for the next laptop Fedora Linux compatible AMD (preferred) non-chinese brand no num pad (preferred) good cooling Daily usage: basic coding, text editing, and browsing =&gt; 32G RAM, 1TB SSD Options ASUS ExpertBook BM1 15.6&#34;, AMD Ryzen 7 170, 32G RAM: €1,149.00 (amazon.de)
+ASUS ExpertBook BM1 15.6&#34;, AMD Ryzen 7 170, 16G RAM: €929.00 (amazon.de)
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-07-19 00:00:00 +0000 UTC'>July 19, 2026</span>&nbsp;·&nbsp;<span>3 min</span></footer>
+  <a class="entry-link" aria-label="post link to Specs and expectations for my next laptop" href="http://localhost:1313/LinuxSetup/linux/next-laptop/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setup R in Fedora
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Fedora R Recovery Log The Situation Following a system crash during an update, the Fedora installation was left in a “corrupted” state. The RPM database was out of sync, and the R environment was missing critical links to system libraries, preventing the installation of the Tidyverse and Phyloseq.
+Phase I: Repairing the Foundation The Issue: dnf was broken, reporting 404 errors and transaction failures. The Fix:
+Cleaned and rebuilt the package database: sudo dnf clean all and sudo dnf makecache. Repaired the broken RPM transaction. Installed the core Development Group: sudo dnf group install “Development Tools”. Phase II: The “Alphabet” (Compilers &amp; Headers) The Issue: R could not compile packages because C&#43;&#43; headers (cstdio, cstring) were missing.
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-15 00:00:00 +0000 UTC'>May 15, 2026</span>&nbsp;·&nbsp;<span>3 min</span></footer>
+  <a class="entry-link" aria-label="post link to Setup R in Fedora" href="http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Very handy packages
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Keyboards Most of the keyboards I use are preinstalled in Fedora using ibus framework, including English GB/US, German, Japanese (Anthy), Taiwan Chinese (Chewing).
+Taiwanese input method in linux has not been updated for a long time, but it does exist under ibus-rime.
+install ibus-rime: sudo dnf install ibus-rime (should be preinstalled in Fedora) download dictionary (banlam.dict.yaml) and scheme (blg_tai.schema.yaml) from this repo and place them in /usr/share/rime-data/ with sudo privilege. Note that other schemes in the repo are Tsuan and Tsiang dialects. Switch to rime input method. In the drop-down setting list, press 「部屬」. Toggle input method with ctrl&#43;` to 「閩南語台灣音」。 Packages for daily tasks firewalld Chromium Thunderbird Strawberry VLC GIMP (Not so much these days) Audacity (Not so much these days) Calibre with plugins: Chinese Text Conversion EpubMerge EpubSplit DeDRM DeACSM (not working on my Ubuntu) One may also try this commandline tool to turn ASCM to DRM-free Epub. Github
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-15 00:00:00 +0000 UTC'>May 15, 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Very handy packages" href="http://localhost:1313/LinuxSetup/linux/packages/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Git install python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Due to the change of qobuz login method, authentication method should be changed to uid, token.
+As in guyathomas’s fork from master branch.
+The fork is pulled with git -b feat/token-auth-poc --single-branch https://github.com/vitiko98/qobuz-dl.git and then installed with
+cd qobuz-dl sudo pip install -e . For uninstall, sudo pip uninstall qobuz-dl
+</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-05-11 00:00:00 +0000 UTC'>May 11, 2026</span>&nbsp;·&nbsp;<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to Git install python" href="http://localhost:1313/LinuxSetup/linux/git_install_python/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">旅外搜尋引擎調整
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。
+Chrome
+Settings &gt; Privacy and security &gt; Site settings &gt; Insecure content &gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源
+進入Settings &gt; 左側選單 Search engine &gt; Site search [Add]:
+Name/Shortcut 可自訂，URL: http://www.google.com.tw/search?q=%s&amp;hl=zh-TW&amp;lr=-lang_zh-CN
+翻譯：search?q=%s 搜尋字串，hl=zh-TW 界面為臺灣中文，lr=-lang_zh-CN 不要(-)中國中文的結果。關於搜尋結果來源的語言也可以用這個參數直接指定，例如lr=lang_zh-TW%7Clang_de%7Clang_ja
+繁體中文 lang_zh-TW 簡體中文 lang_zh-CN 英文 lang_en 日文 lang_ja 法文 lang_fr 德文 lang_de 韓文 lang_ko 參考 https://forum.gamer.com.tw/Co.php?bsn=60030&amp;sn=2117484
+Firefox
+在小狐狸身上要用外掛才能編輯 Address bar 的搜尋引擎URL: Search Engines Helper https://addons.mozilla.org/....../search....../……
+ChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s&#43;-site:.cn&#43;-site:baidu.com&#43;-site:weibo.com&#43;-site:qq.com&#43;-site:163.com&#43;-site:jd.com&#43;-site:taobao.com&#43;-site:xinhua.net&#43;-site:cctv.com&amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：
+uBlacklist https://addons.mozilla.org/....../addon/ublacklist/……
+uBlacklist &gt; options &gt; Sites blocked from appearing in Google search results:
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2025-03-15 00:00:00 +0000 UTC'>March 15, 2025</span>&nbsp;·&nbsp;<span>1 min</span></footer>
+  <a class="entry-link" aria-label="post link to 旅外搜尋引擎調整" href="http://localhost:1313/LinuxSetup/linux/search-engine/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© 2026 Melissa Kueh</span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+baseURL: "https://ioksink.github.io/LinuxSetup/"
+locale: "en-uk"
+title: "Melissa's Notebook"
+theme: ["PaperMod"]
+copyright: © 2026 Melissa Kueh
+
+params:
+  env: production
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: true
+
+  profileMode:
+    enabled: true
+    Title: "Welcome to Melissa's Notebook!"
+    Subtitle: "A space for Linux exploration notes, university related digital service guide, and everyday gibberish."
+    imageUrl: "avatar-sweet-potato.jpg"
+
+  socialIcons:
+    - name: "twitter"
+      url: "https://x.com/MelissaK_030"
+    - name: "github"
+      url: "https://github.com/ioksink"
+    - name: "email"
+      url: "mailto:ioksin.kueh@gmail.com"
+
+menu:
+  main:
+    - name: "Uni Guide"
+      url: /uni/
+      weight: 10
+    - name: Tech
+      url: /Linux/
+      weight: 20
+    - name: Blog
+      url: /Blog/
+      weight: 30
+
+editPost:
+  URL: "https://github.com/ioksink/LinuxSetup/content"
+  Text: "Edit" # edit text
+  appendFilePath: true # to append file path to Edit link

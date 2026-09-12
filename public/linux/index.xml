@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linuxes on Melissa&#39;s Notebook</title>
+    <link>http://localhost:1313/LinuxSetup/linux/</link>
+    <description>Recent content in Linuxes on Melissa&#39;s Notebook</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>2026 Melissa Kueh</copyright>
+    <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/LinuxSetup/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GNOME</title>
+      <link>http://localhost:1313/LinuxSetup/linux/gnome/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/linux/gnome/</guid>
+      <description>&lt;h1 id=&#34;current-system-setup&#34;&gt;Current system setup&lt;/h1&gt;
+&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;../fastfetch-20260805.png&#34; title=&#34;Fastfetch Screenshot&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;gnome-tweak&#34;&gt;GNOME Tweak&lt;/h1&gt;
+&lt;p&gt;Fonts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Interface Text: Lucida Sans Unicode&lt;/li&gt;
+&lt;li&gt;Document Text: SF Pro Display&lt;/li&gt;
+&lt;li&gt;Monospace Text: Cascadia Code (FiraCode Nerd Font for terminal p10k theme)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Appearance&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cursor: Sunity-cursors&lt;/li&gt;
+&lt;li&gt;Icons: Papirus-Dark&lt;/li&gt;
+&lt;li&gt;Legacy Applications: Adwaita (default)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gnome-extensions&#34;&gt;GNOME Extensions&lt;/h2&gt;
+&lt;p&gt;Managed by GNOME extesion manager&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Just Perfection&lt;/li&gt;
+&lt;li&gt;Date Menu Formatter&lt;/li&gt;
+&lt;li&gt;WeatherPanel&lt;/li&gt;
+&lt;li&gt;Dash to Dock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;backgroundwallpapers&#34;&gt;Background/Wallpapers&lt;/h2&gt;
+&lt;p&gt;The wallpapers added by the users are in &lt;code&gt;~/.local/share/backgrounds&lt;/code&gt;, no special permission required. The default distro backgrounds and gnome backgrounds are in &lt;code&gt;/usr/share/backgrounds/&lt;/code&gt;, making changes to this folder would require admin authority.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Specs and expectations for my next laptop</title>
+      <link>http://localhost:1313/LinuxSetup/linux/next-laptop/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/linux/next-laptop/</guid>
+      <description>&lt;h1 id=&#34;current-device&#34;&gt;Current device&lt;/h1&gt;
+&lt;p&gt;Lenovo Yoga Slim 7 Carbon 14ACN6&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU: AMD Ryzen™ 7 5800U with Radeon™ Graphics × 16&lt;/li&gt;
+&lt;li&gt;16G RAM&lt;/li&gt;
+&lt;li&gt;1TB SSD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;looking-for-the-next-laptop&#34;&gt;Looking for the next laptop&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Fedora Linux compatible&lt;/li&gt;
+&lt;li&gt;AMD (preferred)&lt;/li&gt;
+&lt;li&gt;non-chinese brand&lt;/li&gt;
+&lt;li&gt;no num pad (preferred)&lt;/li&gt;
+&lt;li&gt;good cooling&lt;/li&gt;
+&lt;li&gt;Daily usage: basic coding, text editing, and browsing =&amp;gt; 32G RAM, 1TB SSD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;options&#34;&gt;Options&lt;/h1&gt;
+&lt;p&gt;ASUS ExpertBook BM1 15.6&amp;quot;, AMD Ryzen 7 170, 32G RAM: €1,149.00 (amazon.de)&lt;/p&gt;
+&lt;p&gt;ASUS ExpertBook BM1 15.6&amp;quot;, AMD Ryzen 7 170, 16G RAM:   €929.00 (amazon.de)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setup R in Fedora</title>
+      <link>http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/</guid>
+      <description>&lt;h1 id=&#34;fedora-r-recovery-log&#34;&gt;Fedora R Recovery Log&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;The Situation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Following a system crash during an update, the Fedora installation was left in a &amp;ldquo;corrupted&amp;rdquo; state. The RPM database was out of sync, and the R environment was missing critical links to system libraries, preventing the installation of the Tidyverse and Phyloseq.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Phase I: Repairing the Foundation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Issue: dnf was broken, reporting 404 errors and transaction failures.
+The Fix:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cleaned and rebuilt the package database: sudo dnf clean all and sudo dnf makecache.&lt;/li&gt;
+&lt;li&gt;Repaired the broken RPM transaction.&lt;/li&gt;
+&lt;li&gt;Installed the core Development Group: sudo dnf group install &amp;ldquo;Development Tools&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Phase II: The &amp;ldquo;Alphabet&amp;rdquo; (Compilers &amp;amp; Headers)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Issue: R could not compile packages because C++ headers (cstdio, cstring) were missing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Very handy packages</title>
+      <link>http://localhost:1313/LinuxSetup/linux/packages/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/linux/packages/</guid>
+      <description>&lt;h1 id=&#34;keyboards&#34;&gt;Keyboards&lt;/h1&gt;
+&lt;p&gt;Most of the keyboards I use are preinstalled in Fedora using ibus framework, including English GB/US, German, Japanese (Anthy), Taiwan Chinese (Chewing).&lt;/p&gt;
+&lt;p&gt;Taiwanese input method in linux has not been updated for a long time, but it does exist under ibus-rime.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;install ibus-rime: &lt;code&gt;sudo dnf install ibus-rime&lt;/code&gt; (should be preinstalled in Fedora)&lt;/li&gt;
+&lt;li&gt;download dictionary (banlam.dict.yaml) and scheme (blg_tai.schema.yaml) from &lt;a href=&#34;https://github.com/a-thok/rime-hokkien&#34;&gt;this repo&lt;/a&gt; and place them in &lt;code&gt;/usr/share/rime-data/&lt;/code&gt; with sudo privilege. Note that other schemes in the repo are Tsuan and Tsiang dialects.&lt;/li&gt;
+&lt;li&gt;Switch to rime input method. In the drop-down setting list, press 「部屬」. Toggle input method with ctrl+` to 「閩南語台灣音」。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;packages-for-daily-tasks&#34;&gt;Packages for daily tasks&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;firewalld&lt;/li&gt;
+&lt;li&gt;Chromium&lt;/li&gt;
+&lt;li&gt;Thunderbird&lt;/li&gt;
+&lt;li&gt;Strawberry&lt;/li&gt;
+&lt;li&gt;VLC&lt;/li&gt;
+&lt;li&gt;GIMP (Not so much these days)&lt;/li&gt;
+&lt;li&gt;Audacity (Not so much these days)&lt;/li&gt;
+&lt;li&gt;Calibre with &lt;a href=&#34;https://plugins.calibre-ebook.com/&#34;&gt;plugins&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;Chinese Text Conversion&lt;/li&gt;
+&lt;li&gt;EpubMerge&lt;/li&gt;
+&lt;li&gt;EpubSplit&lt;/li&gt;
+&lt;li&gt;DeDRM&lt;/li&gt;
+&lt;li&gt;DeACSM (not working on my Ubuntu)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One may also try this commandline tool to turn ASCM to DRM-free Epub. &lt;a href=&#34;https://github.com/esn/knock&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git install python</title>
+      <link>http://localhost:1313/LinuxSetup/linux/git_install_python/</link>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/linux/git_install_python/</guid>
+      <description>&lt;p&gt;Due to the change of qobuz login method, authentication method should be changed to uid, token.&lt;/p&gt;
+&lt;p&gt;As in &lt;a href=&#34;https://github.com/guyathomas/qobuz-dl/tree/feat/token-auth-poc&#34;&gt;guyathomas&amp;rsquo;s fork&lt;/a&gt; from &lt;a href=&#34;https://github.com/vitiko98/qobuz-dl/tree/master&#34;&gt;master branch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The fork is pulled with &lt;code&gt;git -b feat/token-auth-poc --single-branch https://github.com/vitiko98/qobuz-dl.git&lt;/code&gt; and then installed with&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd qobuz-dl
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo pip install -e .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For uninstall, &lt;code&gt;sudo pip uninstall qobuz-dl&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>旅外搜尋引擎調整</title>
+      <link>http://localhost:1313/LinuxSetup/linux/search-engine/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/linux/search-engine/</guid>
+      <description>&lt;p&gt;在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chrome&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Settings &amp;gt; Privacy and security &amp;gt; Site settings &amp;gt; Insecure content &amp;gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源&lt;/p&gt;
+&lt;p&gt;進入Settings &amp;gt; 左側選單 Search engine &amp;gt; Site search [Add]:&lt;/p&gt;
+&lt;p&gt;Name/Shortcut 可自訂，URL: &lt;a href=&#34;http://www.google.com.tw/search?q=%25s&amp;amp;hl=zh-TW&amp;amp;lr=-lang_zh-CN&#34;&gt;http://www.google.com.tw/search?q=%s&amp;amp;hl=zh-TW&amp;amp;lr=-lang_zh-CN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;翻譯：search?q=%s 搜尋字串，hl=zh-TW 界面為臺灣中文，lr=-lang_zh-CN 不要(-)中國中文的結果。關於搜尋結果來源的語言也可以用這個參數直接指定，例如lr=lang_zh-TW%7Clang_de%7Clang_ja&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;繁體中文  lang_zh-TW&lt;/li&gt;
+&lt;li&gt;簡體中文  lang_zh-CN&lt;/li&gt;
+&lt;li&gt;英文  lang_en&lt;/li&gt;
+&lt;li&gt;日文  lang_ja&lt;/li&gt;
+&lt;li&gt;法文  lang_fr&lt;/li&gt;
+&lt;li&gt;德文  lang_de&lt;/li&gt;
+&lt;li&gt;韓文  lang_ko&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;參考 &lt;a href=&#34;https://forum.gamer.com.tw/Co.php?bsn=60030&amp;amp;sn=2117484&#34;&gt;https://forum.gamer.com.tw/Co.php?bsn=60030&amp;amp;sn=2117484&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在小狐狸身上要用外掛才能編輯 Address bar 的搜尋引擎URL: Search Engines Helper &lt;a href=&#34;https://addons.mozilla.org/....../search....../&#34;&gt;https://addons.mozilla.org/....../search....../&lt;/a&gt;&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;ChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s+-site:.cn+-site:baidu.com+-site:weibo.com+-site:qq.com+-site:163.com+-site:jd.com+-site:taobao.com+-site:xinhua.net+-site:cctv.com&amp;amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：&lt;/p&gt;
+&lt;p&gt;uBlacklist &lt;a href=&#34;https://addons.mozilla.org/....../addon/ublacklist/&#34;&gt;https://addons.mozilla.org/....../addon/ublacklist/&lt;/a&gt;&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;uBlacklist &amp;gt; options &amp;gt; Sites blocked from appearing in Google search results:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unis on Melissa&#39;s Notebook</title>
+    <link>http://localhost:1313/LinuxSetup/uni/</link>
+    <description>Recent content in Unis on Melissa&#39;s Notebook</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>2026 Melissa Kueh</copyright>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/LinuxSetup/uni/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sync Zotero in Your Own Server</title>
+      <link>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</guid>
+      <description>&lt;h1 id=&#34;merging-two-or-more-zotero-in-server&#34;&gt;Merging two (or more) Zotero in server&lt;/h1&gt;
+&lt;p&gt;If you already have Zotero in your computers, the build-in Zotero sync can sometimes create fake links of attached file on your computers. That is because the build-in sync function only syncs the local file locations, which means the file is only in one device &lt;strong&gt;locally&lt;/strong&gt;. Here, I would like to guide you through a solution using the free build-in Zotero sync for metadata and self-arranged server to sync attached files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Uni Freiburg Digital Service Guide</title>
+      <link>http://localhost:1313/LinuxSetup/uni/uni-freiburg-service/</link>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/uni/uni-freiburg-service/</guid>
+      <description>&lt;h1 id=&#34;帳號設定-uni-freiburg-myaccount&#34;&gt;帳號設定 Uni Freiburg myAccount&lt;/h1&gt;
+&lt;p&gt;在完成首次註冊後，你會收到學校寄來的帳號密碼通知信，故事從這裡開始。以下將你收到的帳號（英文與數字組合）以 [你的帳號] 或 [Username] 表示。&lt;/p&gt;
+&lt;p&gt;The story begins after you receive your account credentials via email following your first immatriculation. Replace [Username] with the username from this account throughout this manual.&lt;/p&gt;
+&lt;h1 id=&#34;網路-network&#34;&gt;網路 Network&lt;/h1&gt;
+&lt;h2 id=&#34;無線網路設定-wifiwlan&#34;&gt;無線網路設定 Wifi/WLAN&lt;/h2&gt;
+&lt;p&gt;在最初收到的信件中，帳號由學校提供，密碼則需進入 myAccount 自行設定。在學校的帳號管理網站 &lt;a href=&#34;https://myaccount.uni-freiburg.de/uadmin/login&#34;&gt;myAccount&lt;/a&gt; 中，你也可以設定泛歐洲科研與教育網路協會的學術無線網路 eduroam 的密碼。eduroam 的帳號固定為 [你的帳號]@uni-freiburg.de。&lt;/p&gt;
+&lt;p&gt;學校提供的網路說明文件入口網站：&lt;a href=&#34;https://www.rz.uni-freiburg.de/de/services/netztel/wlan-vpn&#34;&gt;德文版 WLAN an der Universität Freiburg&lt;/a&gt; 與 &lt;a href=&#34;https://www.rz.uni-freiburg.de/en/services/netztel-en/wlan-vpn-en?set_language=en&#34;&gt;英文版 WLAN at Freiburg University&lt;/a&gt;。該頁面也提供非大學成員的訪問使用指引。&lt;/p&gt;
+&lt;p&gt;關於 eduroam 的設定說明文件 &lt;a href=&#34;https://wiki.uni-freiburg.de/rz/doku.php?id=wlan-eduroam&#34;&gt;WLAN mit eduroam&lt;/a&gt;，請依照你的設備系統類型參考相應步驟進行設定。&lt;/p&gt;
+&lt;p&gt;In the initial email, the username is provided by the university, while the password must be set by yourself in myAccount. In the university account management portal &lt;a href=&#34;https://myaccount.uni-freiburg.de/uadmin/login&#34;&gt;myAccount&lt;/a&gt;, you can also set the password for eduroam, the academic wireless network of the pan-European research and education networking association. The eduroam username is always [Username]@uni-freiburg.de.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
