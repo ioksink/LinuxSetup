@@ -14,11 +14,12 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: true
+  searchHidden: true
 
   profileMode:
     enabled: true
     Title: "Welcome to Melissa's Notebook!"
-    Subtitle: "A space for Linux exploration notes, university related digital service guide, and everyday gibberish."
+    Subtitle: "My space for Linux exploration notes, university related digital service guide, and random gibberish. Email me if you have any question or issue!"
     imageUrl: "avatar-sweet-potato.jpg"
 
   socialIcons:

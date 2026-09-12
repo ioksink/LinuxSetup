@@ -7,8 +7,18 @@
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
-    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/LinuxSetup/uni/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uni Freiburg OpenWebUI Models</title>
+      <link>http://localhost:1313/LinuxSetup/uni/ufr_models/</link>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LinuxSetup/uni/ufr_models/</guid>
+      <description>&lt;h1 id=&#34;which-model-should-i-choose-from-the-current-list-of-models-provided-by-uni-freiburg-openwebui&#34;&gt;Which model should I choose from the current list of models provided by uni freiburg openwebui?&lt;/h1&gt;
+&lt;p&gt;Several other models in your configuration are highly suitable for academic rewriting and grammatical correction. While &lt;code&gt;UFR: Text&lt;/code&gt; is a dedicated option, the following models are likely to be more effective depending on your specific goals:&lt;/p&gt;
+&lt;h3 id=&#34;1-for-high-precision-academic-polishing&#34;&gt;1. For High-Precision Academic Polishing&lt;/h3&gt;
+&lt;p&gt;If your priority is &lt;strong&gt;rigorous adherence to academic standards&lt;/strong&gt;, formal tone, and complex sentence restructuring, use the top-tier models:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Sync Zotero in Your Own Server</title>
       <link>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</link>

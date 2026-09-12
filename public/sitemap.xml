@@ -9,6 +9,12 @@
     <loc>http://localhost:1313/LinuxSetup/</loc>
     <lastmod>2026-08-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/LinuxSetup/uni/ufr_models/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/LinuxSetup/uni/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/LinuxSetup/blog/idiot-y/</loc>
     <lastmod>2026-08-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -22,9 +28,6 @@
     <lastmod>2026-07-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</loc>
-    <lastmod>2026-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/LinuxSetup/uni/</loc>
     <lastmod>2026-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/LinuxSetup/blog/dumbass-trouble-2026/</loc>

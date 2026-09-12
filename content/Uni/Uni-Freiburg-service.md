@@ -178,9 +178,9 @@ This explicitly loads `nvm` before running `npx`, which works better for my envi
 
 ### Receive model names
 
-學校或 OpenAI 會定期更新、更名 OpenWebUI 裡面使用的模型，因此必須不定時使用 [這個腳本](../update_models.py) 更新 agent 裡面註冊的模型。這個腳本會直接覆寫 `~/.continue/config.yaml` 裡面的內容。
+學校或 OpenAI 會定期更新、更名 OpenWebUI 裡面使用的模型，因此必須不定時使用 [這個腳本](../ufr_models/#update-models-with-this-python-script) 更新 agent 裡面註冊的模型。這個腳本會直接覆寫 `~/.continue/config.yaml` 裡面的內容。
 
-The university or OpenAI will periodically update and rename the models used in OpenWebUI. Therefore, you must regularly update the models registered in the third-party agent (Continue.dev in this case) using [this script](update_models.py). This script will directly overwrite the contents of `~/.continue/config.yaml`.
+The university or OpenAI will periodically update and rename the models used in OpenWebUI. Therefore, you must regularly update the models registered in the third-party agent (Continue.dev in this case) using [this script](../ufr_models/#update-models-with-this-python-script). This script will directly overwrite the contents of `~/.continue/config.yaml`.
 
 首先，下載這個程式並用文字編輯器開啟。檔案中寫的路徑 `~/.continue/config.yaml` 是 Linux 系統通用的路徑。Windows 使用者需要從 Continue 擴充功能裡面開啟 Configs 側欄，點選 Main Config 旁邊的齒輪就會打開 config.yaml。右鍵點擊編輯器上方的檔名，選擇「開啟檔案位置」，找到該檔案的位置並開啟這個腳本，將 `~/.continue/config.yaml` 更改為正確的路徑。同時，你必須將自己的 API key 寫入這個腳本第 10 行的 `OPENWEBUI_TOKEN`。設定完成後，請回到「Continue」分頁中的首頁嘗試進行對話，確保設定運行順暢。請務必確認本機位於大學網路之下或使用 VPN。
 
