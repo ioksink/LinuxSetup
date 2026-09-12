@@ -1,3 +1,9 @@
+---
+title: "Uni Freiburg OpenWebUI Models"
+date: 2026-08-13
+draft: false
+---
+
 Yes, several other models in your configuration are highly suitable for academic rewriting and grammatical correction. While `UFR: Text` is a dedicated option, the following models are likely to be more effective depending on your specific goals:
 
 ### 1. For High-Precision Academic Polishing
