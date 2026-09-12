@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Unis on Melissa&#39;s Notebook</title>
-    <link>http://localhost:1313/LinuxSetup/uni/</link>
+    <link>http://localhost:1313/MelissasNotebook/uni/</link>
     <description>Recent content in Unis on Melissa&#39;s Notebook</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
     <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/LinuxSetup/uni/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/MelissasNotebook/uni/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Uni Freiburg OpenWebUI Models</title>
-      <link>http://localhost:1313/LinuxSetup/uni/ufr_models/</link>
+      <link>http://localhost:1313/MelissasNotebook/uni/ufr_models/</link>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/uni/ufr_models/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/uni/ufr_models/</guid>
       <description>&lt;h1 id=&#34;which-model-should-i-choose-from-the-current-list-of-models-provided-by-uni-freiburg-openwebui&#34;&gt;Which model should I choose from the current list of models provided by uni freiburg openwebui?&lt;/h1&gt;
 &lt;p&gt;Several other models in your configuration are highly suitable for academic rewriting and grammatical correction. While &lt;code&gt;UFR: Text&lt;/code&gt; is a dedicated option, the following models are likely to be more effective depending on your specific goals:&lt;/p&gt;
 &lt;h3 id=&#34;1-for-high-precision-academic-polishing&#34;&gt;1. For High-Precision Academic Polishing&lt;/h3&gt;
@@ -21,17 +21,17 @@
     </item>
     <item>
       <title>Sync Zotero in Your Own Server</title>
-      <link>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</link>
+      <link>http://localhost:1313/MelissasNotebook/uni/sync_zotero_in_own_server/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/uni/sync_zotero_in_own_server/</guid>
       <description>&lt;h1 id=&#34;merging-two-or-more-zotero-in-server&#34;&gt;Merging two (or more) Zotero in server&lt;/h1&gt;
 &lt;p&gt;If you already have Zotero in your computers, the build-in Zotero sync can sometimes create fake links of attached file on your computers. That is because the build-in sync function only syncs the local file locations, which means the file is only in one device &lt;strong&gt;locally&lt;/strong&gt;. Here, I would like to guide you through a solution using the free build-in Zotero sync for metadata and self-arranged server to sync attached files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Uni Freiburg Digital Service Guide</title>
-      <link>http://localhost:1313/LinuxSetup/uni/uni-freiburg-service/</link>
+      <link>http://localhost:1313/MelissasNotebook/uni/uni-freiburg-service/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/uni/uni-freiburg-service/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/uni/uni-freiburg-service/</guid>
       <description>&lt;h1 id=&#34;帳號設定-uni-freiburg-myaccount&#34;&gt;帳號設定 Uni Freiburg myAccount&lt;/h1&gt;
 &lt;p&gt;在完成首次註冊後，你會收到學校寄來的帳號密碼通知信，故事從這裡開始。以下將你收到的帳號（英文與數字組合）以 [你的帳號] 或 [Username] 表示。&lt;/p&gt;
 &lt;p&gt;The story begins after you receive your account credentials via email following your first immatriculation. Replace [Username] with the username from this account throughout this manual.&lt;/p&gt;

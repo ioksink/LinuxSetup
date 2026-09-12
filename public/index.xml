@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Melissa&#39;s Notebook</title>
-    <link>http://localhost:1313/LinuxSetup/</link>
+    <link>http://localhost:1313/MelissasNotebook/</link>
     <description>Recent content on Melissa&#39;s Notebook</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
-    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/LinuxSetup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/MelissasNotebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SIBE Evolutione Congress 2026</title>
+      <link>http://localhost:1313/MelissasNotebook/news/sibe-2026/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MelissasNotebook/news/sibe-2026/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Uni Freiburg OpenWebUI Models</title>
-      <link>http://localhost:1313/LinuxSetup/uni/ufr_models/</link>
+      <link>http://localhost:1313/MelissasNotebook/uni/ufr_models/</link>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/uni/ufr_models/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/uni/ufr_models/</guid>
       <description>&lt;h1 id=&#34;which-model-should-i-choose-from-the-current-list-of-models-provided-by-uni-freiburg-openwebui&#34;&gt;Which model should I choose from the current list of models provided by uni freiburg openwebui?&lt;/h1&gt;
 &lt;p&gt;Several other models in your configuration are highly suitable for academic rewriting and grammatical correction. While &lt;code&gt;UFR: Text&lt;/code&gt; is a dedicated option, the following models are likely to be more effective depending on your specific goals:&lt;/p&gt;
 &lt;h3 id=&#34;1-for-high-precision-academic-polishing&#34;&gt;1. For High-Precision Academic Polishing&lt;/h3&gt;
@@ -21,9 +28,9 @@
     </item>
     <item>
       <title>地雷引爆記</title>
-      <link>http://localhost:1313/LinuxSetup/blog/idiot-y/</link>
+      <link>http://localhost:1313/MelissasNotebook/blog/idiot-y/</link>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/blog/idiot-y/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/blog/idiot-y/</guid>
       <description>&lt;h2 id=&#34;i&#34;&gt;I&lt;/h2&gt;
 &lt;p&gt;以下是近期發現前一篇旅遊鬼故事中的主揪Y其實也是個雷包的故事。&lt;/p&gt;
 &lt;p&gt;事情大概就從月前答應幫忙開始。這位同學WG冰箱滿了，從臺灣帶來的東西冰不下，於是借我家冰箱冰。當時倒也覺得沒什麼問題，臺灣人嘛能幫就幫，家裡也確實有空間。東西送來，他說「東西你吃掉一些也沒關係，我那邊還很多，留一點給我就行」。總之，雙方都是客氣禮貌，我簡單招待一下、再多送點手上多的急救箱材料等。&lt;/p&gt;
@@ -46,11 +53,11 @@
     </item>
     <item>
       <title>GNOME</title>
-      <link>http://localhost:1313/LinuxSetup/linux/gnome/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/gnome/</link>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/gnome/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/gnome/</guid>
       <description>&lt;h1 id=&#34;current-system-setup&#34;&gt;Current system setup&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;../fastfetch-20260805.png&#34; title=&#34;Fastfetch Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/MelissasNotebook/linux/gnome/fastfetch-20260805.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;gnome-tweak&#34;&gt;GNOME Tweak&lt;/h1&gt;
 &lt;p&gt;Fonts&lt;/p&gt;
 &lt;ul&gt;
@@ -77,9 +84,9 @@
     </item>
     <item>
       <title>Specs and expectations for my next laptop</title>
-      <link>http://localhost:1313/LinuxSetup/linux/next-laptop/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/next-laptop/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/next-laptop/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/next-laptop/</guid>
       <description>&lt;h1 id=&#34;current-device&#34;&gt;Current device&lt;/h1&gt;
 &lt;p&gt;Lenovo Yoga Slim 7 Carbon 14ACN6&lt;/p&gt;
 &lt;ul&gt;
@@ -102,17 +109,17 @@
     </item>
     <item>
       <title>Sync Zotero in Your Own Server</title>
-      <link>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</link>
+      <link>http://localhost:1313/MelissasNotebook/uni/sync_zotero_in_own_server/</link>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/uni/sync_zotero_in_own_server/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/uni/sync_zotero_in_own_server/</guid>
       <description>&lt;h1 id=&#34;merging-two-or-more-zotero-in-server&#34;&gt;Merging two (or more) Zotero in server&lt;/h1&gt;
 &lt;p&gt;If you already have Zotero in your computers, the build-in Zotero sync can sometimes create fake links of attached file on your computers. That is because the build-in sync function only syncs the local file locations, which means the file is only in one device &lt;strong&gt;locally&lt;/strong&gt;. Here, I would like to guide you through a solution using the free build-in Zotero sync for metadata and self-arranged server to sync attached files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>旅遊鬼故事</title>
-      <link>http://localhost:1313/LinuxSetup/blog/dumbass-trouble-2026/</link>
+      <link>http://localhost:1313/MelissasNotebook/blog/dumbass-trouble-2026/</link>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/blog/dumbass-trouble-2026/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/blog/dumbass-trouble-2026/</guid>
       <description>&lt;p&gt;鬼：欸咪&lt;/p&gt;
 &lt;p&gt;人：Y、Y2、A與我&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 〈〉 這是標題格式
@@ -177,9 +184,9 @@
     </item>
     <item>
       <title>Setup R in Fedora</title>
-      <link>http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/setup_r_in_fedora/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/setup_r_in_fedora/</guid>
       <description>&lt;h1 id=&#34;fedora-r-recovery-log&#34;&gt;Fedora R Recovery Log&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;The Situation&lt;/li&gt;
@@ -202,9 +209,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Very handy packages</title>
-      <link>http://localhost:1313/LinuxSetup/linux/packages/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/packages/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/packages/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/packages/</guid>
       <description>&lt;h1 id=&#34;keyboards&#34;&gt;Keyboards&lt;/h1&gt;
 &lt;p&gt;Most of the keyboards I use are preinstalled in Fedora using ibus framework, including English GB/US, German, Japanese (Anthy), Taiwan Chinese (Chewing).&lt;/p&gt;
 &lt;p&gt;Taiwanese input method in linux has not been updated for a long time, but it does exist under ibus-rime.&lt;/p&gt;
@@ -236,9 +243,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Git install python</title>
-      <link>http://localhost:1313/LinuxSetup/linux/git_install_python/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/git_install_python/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/git_install_python/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/git_install_python/</guid>
       <description>&lt;p&gt;Due to the change of qobuz login method, authentication method should be changed to uid, token.&lt;/p&gt;
 &lt;p&gt;As in &lt;a href=&#34;https://github.com/guyathomas/qobuz-dl/tree/feat/token-auth-poc&#34;&gt;guyathomas&amp;rsquo;s fork&lt;/a&gt; from &lt;a href=&#34;https://github.com/vitiko98/qobuz-dl/tree/master&#34;&gt;master branch&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The fork is pulled with &lt;code&gt;git -b feat/token-auth-poc --single-branch https://github.com/vitiko98/qobuz-dl.git&lt;/code&gt; and then installed with&lt;/p&gt;
@@ -248,9 +255,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Uni Freiburg Digital Service Guide</title>
-      <link>http://localhost:1313/LinuxSetup/uni/uni-freiburg-service/</link>
+      <link>http://localhost:1313/MelissasNotebook/uni/uni-freiburg-service/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/uni/uni-freiburg-service/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/uni/uni-freiburg-service/</guid>
       <description>&lt;h1 id=&#34;帳號設定-uni-freiburg-myaccount&#34;&gt;帳號設定 Uni Freiburg myAccount&lt;/h1&gt;
 &lt;p&gt;在完成首次註冊後，你會收到學校寄來的帳號密碼通知信，故事從這裡開始。以下將你收到的帳號（英文與數字組合）以 [你的帳號] 或 [Username] 表示。&lt;/p&gt;
 &lt;p&gt;The story begins after you receive your account credentials via email following your first immatriculation. Replace [Username] with the username from this account throughout this manual.&lt;/p&gt;
@@ -263,9 +270,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>旅外搜尋引擎調整</title>
-      <link>http://localhost:1313/LinuxSetup/linux/search-engine/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/search-engine/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/search-engine/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/search-engine/</guid>
       <description>&lt;p&gt;在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chrome&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Settings &amp;gt; Privacy and security &amp;gt; Site settings &amp;gt; Insecure content &amp;gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源&lt;/p&gt;
@@ -287,6 +294,14 @@ The Fix:&lt;/p&gt;
 &lt;p&gt;ChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s+-site:.cn+-site:baidu.com+-site:weibo.com+-site:qq.com+-site:163.com+-site:jd.com+-site:taobao.com+-site:xinhua.net+-site:cctv.com&amp;amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：&lt;/p&gt;
 &lt;p&gt;uBlacklist &lt;a href=&#34;https://addons.mozilla.org/....../addon/ublacklist/&#34;&gt;https://addons.mozilla.org/....../addon/ublacklist/&lt;/a&gt;&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;uBlacklist &amp;gt; options &amp;gt; Sites blocked from appearing in Google search results:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post Template</title>
+      <link>http://localhost:1313/MelissasNotebook/note/post_template/</link>
+      <pubDate>Mon, 31 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MelissasNotebook/note/post_template/</guid>
+      <description>&lt;h1 id=&#34;header-1&#34;&gt;header 1&lt;/h1&gt;
+&lt;p&gt;This is a template for future posts.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

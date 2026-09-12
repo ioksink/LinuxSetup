@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Melissa&#39;s Notebook</title>
-    <link>http://localhost:1313/LinuxSetup/categories/</link>
+    <link>http://localhost:1313/MelissasNotebook/categories/</link>
     <description>Recent content in Categories on Melissa&#39;s Notebook</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
-    <atom:link href="http://localhost:1313/LinuxSetup/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/MelissasNotebook/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

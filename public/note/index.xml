@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Notes on Melissa&#39;s Notebook</title>
+    <link>http://localhost:1313/MelissasNotebook/note/</link>
+    <description>Recent content in Notes on Melissa&#39;s Notebook</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>2026 Melissa Kueh</copyright>
+    <lastBuildDate>Mon, 31 Jan 2000 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/MelissasNotebook/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post Template</title>
+      <link>http://localhost:1313/MelissasNotebook/note/post_template/</link>
+      <pubDate>Mon, 31 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MelissasNotebook/note/post_template/</guid>
+      <description>&lt;h1 id=&#34;header-1&#34;&gt;header 1&lt;/h1&gt;
+&lt;p&gt;This is a template for future posts.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

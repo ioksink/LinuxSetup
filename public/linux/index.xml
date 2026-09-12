@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linuxes on Melissa&#39;s Notebook</title>
-    <link>http://localhost:1313/LinuxSetup/linux/</link>
+    <link>http://localhost:1313/MelissasNotebook/linux/</link>
     <description>Recent content in Linuxes on Melissa&#39;s Notebook</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
     <lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/LinuxSetup/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/MelissasNotebook/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GNOME</title>
-      <link>http://localhost:1313/LinuxSetup/linux/gnome/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/gnome/</link>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/gnome/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/gnome/</guid>
       <description>&lt;h1 id=&#34;current-system-setup&#34;&gt;Current system setup&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;../fastfetch-20260805.png&#34; title=&#34;Fastfetch Screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/MelissasNotebook/linux/gnome/fastfetch-20260805.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;gnome-tweak&#34;&gt;GNOME Tweak&lt;/h1&gt;
 &lt;p&gt;Fonts&lt;/p&gt;
 &lt;ul&gt;
@@ -42,9 +42,9 @@
     </item>
     <item>
       <title>Specs and expectations for my next laptop</title>
-      <link>http://localhost:1313/LinuxSetup/linux/next-laptop/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/next-laptop/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/next-laptop/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/next-laptop/</guid>
       <description>&lt;h1 id=&#34;current-device&#34;&gt;Current device&lt;/h1&gt;
 &lt;p&gt;Lenovo Yoga Slim 7 Carbon 14ACN6&lt;/p&gt;
 &lt;ul&gt;
@@ -67,9 +67,9 @@
     </item>
     <item>
       <title>Setup R in Fedora</title>
-      <link>http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/setup_r_in_fedora/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/setup_r_in_fedora/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/setup_r_in_fedora/</guid>
       <description>&lt;h1 id=&#34;fedora-r-recovery-log&#34;&gt;Fedora R Recovery Log&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;The Situation&lt;/li&gt;
@@ -92,9 +92,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Very handy packages</title>
-      <link>http://localhost:1313/LinuxSetup/linux/packages/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/packages/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/packages/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/packages/</guid>
       <description>&lt;h1 id=&#34;keyboards&#34;&gt;Keyboards&lt;/h1&gt;
 &lt;p&gt;Most of the keyboards I use are preinstalled in Fedora using ibus framework, including English GB/US, German, Japanese (Anthy), Taiwan Chinese (Chewing).&lt;/p&gt;
 &lt;p&gt;Taiwanese input method in linux has not been updated for a long time, but it does exist under ibus-rime.&lt;/p&gt;
@@ -126,9 +126,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Git install python</title>
-      <link>http://localhost:1313/LinuxSetup/linux/git_install_python/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/git_install_python/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/git_install_python/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/git_install_python/</guid>
       <description>&lt;p&gt;Due to the change of qobuz login method, authentication method should be changed to uid, token.&lt;/p&gt;
 &lt;p&gt;As in &lt;a href=&#34;https://github.com/guyathomas/qobuz-dl/tree/feat/token-auth-poc&#34;&gt;guyathomas&amp;rsquo;s fork&lt;/a&gt; from &lt;a href=&#34;https://github.com/vitiko98/qobuz-dl/tree/master&#34;&gt;master branch&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The fork is pulled with &lt;code&gt;git -b feat/token-auth-poc --single-branch https://github.com/vitiko98/qobuz-dl.git&lt;/code&gt; and then installed with&lt;/p&gt;
@@ -138,9 +138,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>旅外搜尋引擎調整</title>
-      <link>http://localhost:1313/LinuxSetup/linux/search-engine/</link>
+      <link>http://localhost:1313/MelissasNotebook/linux/search-engine/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/linux/search-engine/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/linux/search-engine/</guid>
       <description>&lt;p&gt;在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chrome&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Settings &amp;gt; Privacy and security &amp;gt; Site settings &amp;gt; Insecure content &amp;gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源&lt;/p&gt;

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blogs on Melissa&#39;s Notebook</title>
-    <link>http://localhost:1313/LinuxSetup/blog/</link>
+    <link>http://localhost:1313/MelissasNotebook/blog/</link>
     <description>Recent content in Blogs on Melissa&#39;s Notebook</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
     <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/LinuxSetup/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/MelissasNotebook/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>地雷引爆記</title>
-      <link>http://localhost:1313/LinuxSetup/blog/idiot-y/</link>
+      <link>http://localhost:1313/MelissasNotebook/blog/idiot-y/</link>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/blog/idiot-y/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/blog/idiot-y/</guid>
       <description>&lt;h2 id=&#34;i&#34;&gt;I&lt;/h2&gt;
 &lt;p&gt;以下是近期發現前一篇旅遊鬼故事中的主揪Y其實也是個雷包的故事。&lt;/p&gt;
 &lt;p&gt;事情大概就從月前答應幫忙開始。這位同學WG冰箱滿了，從臺灣帶來的東西冰不下，於是借我家冰箱冰。當時倒也覺得沒什麼問題，臺灣人嘛能幫就幫，家裡也確實有空間。東西送來，他說「東西你吃掉一些也沒關係，我那邊還很多，留一點給我就行」。總之，雙方都是客氣禮貌，我簡單招待一下、再多送點手上多的急救箱材料等。&lt;/p&gt;
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>旅遊鬼故事</title>
-      <link>http://localhost:1313/LinuxSetup/blog/dumbass-trouble-2026/</link>
+      <link>http://localhost:1313/MelissasNotebook/blog/dumbass-trouble-2026/</link>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/LinuxSetup/blog/dumbass-trouble-2026/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/blog/dumbass-trouble-2026/</guid>
       <description>&lt;p&gt;鬼：欸咪&lt;/p&gt;
 &lt;p&gt;人：Y、Y2、A與我&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 〈〉 這是標題格式
