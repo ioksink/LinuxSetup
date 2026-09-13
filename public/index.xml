@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>2026 Melissa Kueh</copyright>
-    <lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 17:44:42 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/MelissasNotebook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SIBE Evolutione Congress 2026</title>
@@ -16,7 +16,8 @@
       <guid>http://localhost:1313/MelissasNotebook/news/sibe-2026/</guid>
       <description>&lt;p&gt;I took my master thesis as a poster to &lt;a href=&#34;https://www.sibe-iseb.it/en/firenze2026&#34;&gt;Firenze 2026&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;The topic was &amp;ldquo;Multi-Marker Analysis of the Bark Beetle Mycobiome Detects Significant Region-specific Biases&amp;rdquo;, under the supervision of Dr. Vienna Kowallik.&lt;/p&gt;
-&lt;p&gt;The trip was sponsored by &lt;a href=&#34;https://www.europaeische-stiftungsweingueter.eu/unsere-weingueter/mueller-fahnenberg-stiftung-freiburg/index.html&#34;&gt;Müller-Fahnenberg Stiftung&lt;/a&gt; (&lt;a href=&#34;https://uni-freiburg.de/universitaet/foerdern-und-stiften/stifter-und-stiftungen-der-albert-ludwigs-universitaet/#M%C3%BCller-Fahnenberg-Stiftung&#34;&gt;Uni Freiburg partner&lt;/a&gt;) and SIBE&amp;rsquo;s travel grant for students.&lt;/p&gt;</description>
+&lt;p&gt;The trip was sponsored by &lt;a href=&#34;https://www.europaeische-stiftungsweingueter.eu/unsere-weingueter/mueller-fahnenberg-stiftung-freiburg/index.html&#34;&gt;Müller-Fahnenberg Stiftung&lt;/a&gt; (&lt;a href=&#34;https://uni-freiburg.de/universitaet/foerdern-und-stiften/stifter-und-stiftungen-der-albert-ludwigs-universitaet/#M%C3%BCller-Fahnenberg-Stiftung&#34;&gt;Uni Freiburg partner&lt;/a&gt;) and SIBE&amp;rsquo;s travel grant for students.&lt;/p&gt;
+&lt;p&gt;The poster will be posted here after thesis submission (Sep 23, 2026).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Uni Freiburg OpenWebUI Models</title>
@@ -55,11 +56,11 @@
     </item>
     <item>
       <title>GNOME</title>
-      <link>http://localhost:1313/MelissasNotebook/linux/gnome/</link>
+      <link>http://localhost:1313/MelissasNotebook/tech/gnome/</link>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MelissasNotebook/linux/gnome/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/tech/gnome/</guid>
       <description>&lt;h1 id=&#34;current-system-setup&#34;&gt;Current system setup&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/MelissasNotebook/linux/gnome/fastfetch-20260805.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;fastfetch screenshot from my current laptop&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/MelissasNotebook/tech/gnome/fastfetch-20260805.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;gnome-tweak&#34;&gt;GNOME Tweak&lt;/h1&gt;
 &lt;p&gt;Fonts&lt;/p&gt;
 &lt;ul&gt;
@@ -86,9 +87,9 @@
     </item>
     <item>
       <title>Specs and expectations for my next laptop</title>
-      <link>http://localhost:1313/MelissasNotebook/linux/next-laptop/</link>
+      <link>http://localhost:1313/MelissasNotebook/tech/next-laptop/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MelissasNotebook/linux/next-laptop/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/tech/next-laptop/</guid>
       <description>&lt;h1 id=&#34;current-device&#34;&gt;Current device&lt;/h1&gt;
 &lt;p&gt;Lenovo Yoga Slim 7 Carbon 14ACN6&lt;/p&gt;
 &lt;ul&gt;
@@ -186,9 +187,9 @@
     </item>
     <item>
       <title>Setup R in Fedora</title>
-      <link>http://localhost:1313/MelissasNotebook/linux/setup_r_in_fedora/</link>
+      <link>http://localhost:1313/MelissasNotebook/tech/setup_r_in_fedora/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MelissasNotebook/linux/setup_r_in_fedora/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/tech/setup_r_in_fedora/</guid>
       <description>&lt;h1 id=&#34;fedora-r-recovery-log&#34;&gt;Fedora R Recovery Log&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;The Situation&lt;/li&gt;
@@ -211,9 +212,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Very handy packages</title>
-      <link>http://localhost:1313/MelissasNotebook/linux/packages/</link>
+      <link>http://localhost:1313/MelissasNotebook/tech/packages/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MelissasNotebook/linux/packages/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/tech/packages/</guid>
       <description>&lt;h1 id=&#34;keyboards&#34;&gt;Keyboards&lt;/h1&gt;
 &lt;p&gt;Most of the keyboards I use are preinstalled in Fedora using ibus framework, including English GB/US, German, Japanese (Anthy), Taiwan Chinese (Chewing).&lt;/p&gt;
 &lt;p&gt;Taiwanese input method in linux has not been updated for a long time, but it does exist under ibus-rime.&lt;/p&gt;
@@ -245,9 +246,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>Git install python</title>
-      <link>http://localhost:1313/MelissasNotebook/linux/git_install_python/</link>
+      <link>http://localhost:1313/MelissasNotebook/tech/git_install_python/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MelissasNotebook/linux/git_install_python/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/tech/git_install_python/</guid>
       <description>&lt;p&gt;Due to the change of qobuz login method, authentication method should be changed to uid, token.&lt;/p&gt;
 &lt;p&gt;As in &lt;a href=&#34;https://github.com/guyathomas/qobuz-dl/tree/feat/token-auth-poc&#34;&gt;guyathomas&amp;rsquo;s fork&lt;/a&gt; from &lt;a href=&#34;https://github.com/vitiko98/qobuz-dl/tree/master&#34;&gt;master branch&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The fork is pulled with &lt;code&gt;git -b feat/token-auth-poc --single-branch https://github.com/vitiko98/qobuz-dl.git&lt;/code&gt; and then installed with&lt;/p&gt;
@@ -272,9 +273,9 @@ The Fix:&lt;/p&gt;
     </item>
     <item>
       <title>旅外搜尋引擎調整</title>
-      <link>http://localhost:1313/MelissasNotebook/linux/search-engine/</link>
+      <link>http://localhost:1313/MelissasNotebook/tech/search-engine/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MelissasNotebook/linux/search-engine/</guid>
+      <guid>http://localhost:1313/MelissasNotebook/tech/search-engine/</guid>
       <description>&lt;p&gt;在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chrome&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Settings &amp;gt; Privacy and security &amp;gt; Site settings &amp;gt; Insecure content &amp;gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源&lt;/p&gt;

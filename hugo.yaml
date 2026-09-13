@@ -19,7 +19,7 @@ params:
   profileMode:
     enabled: true
     Title: "Welcome to Melissa's Notebook!"
-    Subtitle: "My space for Linux exploration notes, university related digital service guide, and random gibberish. Email me if you have any question or issue!"
+    Subtitle: "My space for Linux exploration notes, university related digital service guide, and random gibberish. Email me if you have any question or issue! 👇"
     imageUrl: "avatar-sweet-potato.jpg"
 
   socialIcons:
@@ -39,7 +39,7 @@ menu:
       url: /uni/
       weight: 20
     - name: "Linux&Tech"
-      url: /Linux/
+      url: /tech/
       weight: 30
     - name: Blog
       url: /Blog/
@@ -52,3 +52,10 @@ editPost:
   URL: "https://github.com/ioksink/MelissasNotebook/content"
   Text: "Edit" # edit text
   appendFilePath: true # to append file path to Edit link
+
+enableGitInfo: true
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
