@@ -38,7 +38,7 @@ menu:
     - name: "Uni Guide"
       url: /uni/
       weight: 20
-    - name: "Linux&Tech"
+    - name: "Tech"
       url: /tech/
       weight: 30
     - name: Blog
