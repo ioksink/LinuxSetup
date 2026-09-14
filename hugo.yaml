@@ -29,6 +29,10 @@ params:
       url: "https://github.com/ioksink"
     - name: "email"
       url: "mailto:ioksin.kueh@gmail.com"
+  editPost:
+    URL: "https://github.com/ioksink/MelissasNotebook/content"
+    Text: "Edit" # edit text
+    appendFilePath: true # to append file path to Edit link
 
 menu:
   main:
@@ -47,11 +51,6 @@ menu:
     - name: Note
       url: /Note/
       weight: 50
-
-editPost:
-  URL: "https://github.com/ioksink/MelissasNotebook/content"
-  Text: "Edit" # edit text
-  appendFilePath: true # to append file path to Edit link
 
 enableGitInfo: true
 frontmatter:

@@ -9,6 +9,15 @@
     <copyright>2026 Melissa Kueh</copyright>
     <atom:link href="http://localhost:1313/MelissasNotebook/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Setup a website by Hugo and Papermod</title>
+      <link>http://localhost:1313/MelissasNotebook/tech/website-hugo-setup/</link>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MelissasNotebook/tech/website-hugo-setup/</guid>
+      <description>&lt;p&gt;This is the setup log of this exact website with Hugo&amp;rsquo;s protocol, Papermod theme, and hosted by github pages.&lt;/p&gt;
+&lt;p&gt;This is originally my personal github repo to store all my note markdown files that I used to distribute guidelines or introductions to my peers. Since markdown files can be directly rendered by github, my notes can directly turn into a plain website without any effort&amp;hellip;&amp;hellip; right?&lt;/p&gt;
+&lt;p&gt;Hmm&amp;hellip;&amp;hellip; yes! There are already frameworks for setting up static websites, for example, &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>GNOME</title>
       <link>http://localhost:1313/MelissasNotebook/tech/gnome/</link>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
