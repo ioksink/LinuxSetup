@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto" data-theme="light">
 
 <head><script src="/MelissasNotebook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MelissasNotebook/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 Chrome
 Settings &gt; Privacy and security &gt; Site settings &gt; Insecure content &gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源
 進入Settings &gt; 左側選單 Search engine &gt; Site search [Add]:
-Name/Shortcut 可自訂，URL: http://www.google.com.tw/search?q=%s&amp;hl=zh-TW&amp;lr=-lang_zh-CN
+Name/Shortcut 可自訂，URL: http://www.google.com.tw/search?q=%s&hl=zh-TW&lr=-lang_zh-CN
 翻譯：search?q=%s 搜尋字串，hl=zh-TW 界面為臺灣中文，lr=-lang_zh-CN 不要(-)中國中文的結果。關於搜尋結果來源的語言也可以用這個參數直接指定，例如lr=lang_zh-TW%7Clang_de%7Clang_ja
 
 繁體中文  lang_zh-TW
@@ -22,7 +22,7 @@ Name/Shortcut 可自訂，URL: http://www.google.com.tw/search?q=%s&amp;hl=zh-TW
 德文  lang_de
 韓文  lang_ko
 
-參考 https://forum.gamer.com.tw/Co.php?bsn=60030&amp;sn=2117484
+參考 https://forum.gamer.com.tw/Co.php?bsn=60030&sn=2117484
 Firefox
 在小狐狸身上要用外掛才能編輯 Address bar 的搜尋引擎URL: Search Engines Helper https://addons.mozilla.org/....../search....../&hellip;&hellip;
 ChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s&#43;-site:.cn&#43;-site:baidu.com&#43;-site:weibo.com&#43;-site:qq.com&#43;-site:163.com&#43;-site:jd.com&#43;-site:taobao.com&#43;-site:xinhua.net&#43;-site:cctv.com&amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：
@@ -47,41 +47,10 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script><meta property="og:url" content="http://localhost:1313/MelissasNotebook/tech/search-engine/">
@@ -147,7 +116,7 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
   "@type": "BlogPosting",
   "headline": "旅外搜尋引擎調整",
   "name": "旅外搜尋引擎調整",
-  "description": "在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。\nChrome\nSettings \u0026gt; Privacy and security \u0026gt; Site settings \u0026gt; Insecure content \u0026gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源\n進入Settings \u0026gt; 左側選單 Search engine \u0026gt; Site search [Add]:\nName/Shortcut 可自訂，URL: http://www.google.com.tw/search?q=%s\u0026amp;hl=zh-TW\u0026amp;lr=-lang_zh-CN\n翻譯：search?q=%s 搜尋字串，hl=zh-TW 界面為臺灣中文，lr=-lang_zh-CN 不要(-)中國中文的結果。關於搜尋結果來源的語言也可以用這個參數直接指定，例如lr=lang_zh-TW%7Clang_de%7Clang_ja\n繁體中文 lang_zh-TW 簡體中文 lang_zh-CN 英文 lang_en 日文 lang_ja 法文 lang_fr 德文 lang_de 韓文 lang_ko 參考 https://forum.gamer.com.tw/Co.php?bsn=60030\u0026amp;sn=2117484\nFirefox\n在小狐狸身上要用外掛才能編輯 Address bar 的搜尋引擎URL: Search Engines Helper https://addons.mozilla.org/....../search....../\u0026hellip;\u0026hellip;\nChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s+-site:.cn+-site:baidu.com+-site:weibo.com+-site:qq.com+-site:163.com+-site:jd.com+-site:taobao.com+-site:xinhua.net+-site:cctv.com\u0026amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：\nuBlacklist https://addons.mozilla.org/....../addon/ublacklist/\u0026hellip;\u0026hellip;\nuBlacklist \u0026gt; options \u0026gt; Sites blocked from appearing in Google search results:\n",
+  "description": "在海外用中文搜尋東西的時候似乎比較容易遇到簡體中文的搜尋結果，偏偏這些簡體中文的結果很常品質不佳或是根本不是我想找的，看到簡體中文就頭痛，有時候還會不小心點進去，氣得想把電腦丟出去（欸先不要），所以產生了這篇筆記調整Google大神。\nChrome\nSettings \u0026gt; Privacy and security \u0026gt; Site settings \u0026gt; Insecure content \u0026gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源\n進入Settings \u0026gt; 左側選單 Search engine \u0026gt; Site search [Add]:\nName/Shortcut 可自訂，URL: http://www.google.com.tw/search?q=%s\u0026hl=zh-TW\u0026lr=-lang_zh-CN\n翻譯：search?q=%s 搜尋字串，hl=zh-TW 界面為臺灣中文，lr=-lang_zh-CN 不要(-)中國中文的結果。關於搜尋結果來源的語言也可以用這個參數直接指定，例如lr=lang_zh-TW%7Clang_de%7Clang_ja\n繁體中文 lang_zh-TW 簡體中文 lang_zh-CN 英文 lang_en 日文 lang_ja 法文 lang_fr 德文 lang_de 韓文 lang_ko 參考 https://forum.gamer.com.tw/Co.php?bsn=60030\u0026sn=2117484\nFirefox\n在小狐狸身上要用外掛才能編輯 Address bar 的搜尋引擎URL: Search Engines Helper https://addons.mozilla.org/....../search....../\u0026hellip;\u0026hellip;\nChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s+-site:.cn+-site:baidu.com+-site:weibo.com+-site:qq.com+-site:163.com+-site:jd.com+-site:taobao.com+-site:xinhua.net+-site:cctv.com\u0026amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：\nuBlacklist https://addons.mozilla.org/....../addon/ublacklist/\u0026hellip;\u0026hellip;\nuBlacklist \u0026gt; options \u0026gt; Sites blocked from appearing in Google search results:\n",
   "keywords": [
     
   ],
@@ -196,7 +165,13 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
+                </button><span class="nav-sep">|</span>
+                    <ul class="lang-menu">
+                        <li>
+                            <a href="http://localhost:1313/MelissasNotebook/zh-tw/" title="繁體中文"
+                                aria-label="繁體中文">繁體中文</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu" class="menu">
@@ -216,8 +191,8 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/MelissasNotebook/blog/" title="Blog">
-                    <span>Blog</span>
+                <a href="http://localhost:1313/MelissasNotebook/blog/" title="zh-Blog">
+                    <span>zh-Blog</span>
                 </a>
             </li>
             <li>
@@ -247,7 +222,8 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
     <h1 class="post-title entry-hint-parent">
       旅外搜尋引擎調整
     </h1>
-    <div class="post-meta"><span title='2025-03-15 00:00:00 +0000 UTC'>March 15, 2025</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-13 20:43:19 +0200 CEST'>Last updated on September 13, 2026</span>&nbsp;·&nbsp;1 min&nbsp;|&nbsp;<span>
+    <div class="post-meta"><span title='2025-03-15 00:00:00 +0000 UTC'>March 15, 2025</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-13 20:43:19 +0200 CEST'>Last updated on September 13, 2026</span>&nbsp;·&nbsp;1 min<span class="post-meta-item">
+    Translations:</span>&nbsp;|&nbsp;<span>
         <a href="https://github.com/ioksink/MelissasNotebook/content/tech/search-engine.md" rel="noopener noreferrer edit" target="_blank">Edit</a>
     </span>
 
@@ -258,7 +234,7 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
 <p><strong>Chrome</strong></p>
 <p>Settings &gt; Privacy and security &gt; Site settings &gt; Insecure content &gt; Customised behaviour: Not allowed to show insecure content [Add] 新增不想看到百度、淘寶等就可以在搜尋結果中擋掉這些來源</p>
 <p>進入Settings &gt; 左側選單 Search engine &gt; Site search [Add]:</p>
-<p>Name/Shortcut 可自訂，URL: <a href="http://www.google.com.tw/search?q=%25s&amp;hl=zh-TW&amp;lr=-lang_zh-CN">http://www.google.com.tw/search?q=%s&amp;hl=zh-TW&amp;lr=-lang_zh-CN</a></p>
+<p>Name/Shortcut 可自訂，URL: <a href="http://www.google.com.tw/search?q=%25s&amp;hl=zh-TW&amp;lr=-lang_zh-CN">http://www.google.com.tw/search?q=%s&hl=zh-TW&lr=-lang_zh-CN</a></p>
 <p>翻譯：search?q=%s 搜尋字串，hl=zh-TW 界面為臺灣中文，lr=-lang_zh-CN 不要(-)中國中文的結果。關於搜尋結果來源的語言也可以用這個參數直接指定，例如lr=lang_zh-TW%7Clang_de%7Clang_ja</p>
 <ul>
 <li>繁體中文  lang_zh-TW</li>
@@ -269,7 +245,7 @@ uBlacklist &gt; options &gt; Sites blocked from appearing in Google search resul
 <li>德文  lang_de</li>
 <li>韓文  lang_ko</li>
 </ul>
-<p>參考 <a href="https://forum.gamer.com.tw/Co.php?bsn=60030&amp;sn=2117484">https://forum.gamer.com.tw/Co.php?bsn=60030&amp;sn=2117484</a></p>
+<p>參考 <a href="https://forum.gamer.com.tw/Co.php?bsn=60030&amp;sn=2117484">https://forum.gamer.com.tw/Co.php?bsn=60030&sn=2117484</a></p>
 <p><strong>Firefox</strong></p>
 <p>在小狐狸身上要用外掛才能編輯 Address bar 的搜尋引擎URL: Search Engines Helper <a href="https://addons.mozilla.org/....../search....../">https://addons.mozilla.org/....../search....../</a>&hellip;&hellip;</p>
 <p>ChatGPT 幫我寫的URL長這樣：https://www.google.com/search?q=%s+-site:.cn+-site:baidu.com+-site:weibo.com+-site:qq.com+-site:163.com+-site:jd.com+-site:taobao.com+-site:xinhua.net+-site:cctv.com&amp;lr=-lang_zh-CN 不過搜尋字串會自動加上後面這些tag在看搜尋結果界面的搜尋欄的時候有點亂。所以改用底下這個小狐狸外掛來擋掉一一些不想看見的來源，在搜尋結果界面上也可以直接點選 Block this site，使用起來蠻直觀的：</p>

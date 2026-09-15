@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto" data-theme="light">
 
 <head><script src="/MelissasNotebook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MelissasNotebook/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,41 +28,10 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script><meta property="og:url" content="http://localhost:1313/MelissasNotebook/note/">
@@ -117,7 +86,13 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
+                </button><span class="nav-sep">|</span>
+                    <ul class="lang-menu">
+                        <li>
+                            <a href="http://localhost:1313/MelissasNotebook/zh-tw/" title="繁體中文"
+                                aria-label="繁體中文">繁體中文</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu" class="menu">
@@ -137,8 +112,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/MelissasNotebook/blog/" title="Blog">
-                    <span>Blog</span>
+                <a href="http://localhost:1313/MelissasNotebook/blog/" title="zh-Blog">
+                    <span>zh-Blog</span>
                 </a>
             </li>
             <li>
@@ -167,14 +142,63 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">皮學筆記
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>散步過程中，地圖上會出現巨大花朵。靠近並互動後，即可獲得對應花種的精華，例如山茶花、九重葛、海芋等，是重要素材來源。
+散步探索 每日可免費使用一次的探測器，可以找到探測器上面標注的皮克敏飾品種類。
+散步時會根據路途經過的地點種類出現盆栽與果實。盆栽可以請粉色皮克敏飛過去帶回來。果實可以請白色或紫色皮克敏搬運，白色皮克敏是最強壯的皮克敏，紫色皮克敏是最大隻的皮克敏，兩種都可以最快把果實搬運回來。全隊單一種類的皮克敏效率最大，否則會以隊伍中行動最慢的皮克敏來計算搬運所需時間。
+種花 將特定種類的精華餵給皮克敏後，牠們頭上會長出對應的花朵，採收後可轉換為花瓣。玩家在走路時可使用花瓣進行「種花」，每次種花完成後都能獲得金幣獎勵。
+種花時應保持移動，如果長時間停留在同一區域，可能無法繼續種下花朵，但花瓣仍會持續消耗。移動速度過快時（約20km/hr），系統同樣可能停止種花。以臺灣GIS精度計算，步行時最有效率且花瓣消耗最慢的設定是攜帶29隻皮克敏散步。攜帶滿員40隻皮克敏時建議騎腳踏車，但不可超過20km/hr。認真的皮友會帶第二隻手機確認速度，不過只要悠閒的騎行就可以了！
+種花經過一小時內剛盛開的大花時，可以取得該花朵的精華大約10~20個，會以果實的型態出現在探索選單上。因此推薦在玩家眾多的市中心，可以打開種花，取得更多精華。
+皮克敏 玩家取得花苗後，需透過實際步行累積步數，花苗才會逐漸成長，達成條件後，從花盆中拔出即可獲得皮克敏。
+根據皮克敏在盆栽本體的重量跟盆栽中待的時間，越久會越大隻，總共有五種大小。皮克敏的大小不會影響戰鬥力。
+除非是一萬步的盆栽或是金色百步盆，一般的皮克敏出生的時候都是不帶裝飾品的普通皮克敏。直到累積滿四顆愛心的好感度，皮克敏才會回到出生盆栽被找到的地方帶回他的飾品。
+累積好感度的方法有許多。皮克敏可被派遣自行外出探索、餵食精華（餵食精華後，皮克敏頭上長出的花朵可以採收成花瓣，作為重要資源），或與玩家一起在街道上探索。
+餵食精華 最快速、直觀的是餵食精華。餵食精華時，長按精華即可讓皮克敏自動前來進食，無需一顆一顆精華餵食；連續點擊兩次哨子，則可快速切換不同隊伍，對於管理多組皮克敏相當方便。餵食第五次的時候，獲得的好感度最多，但餵食到第六次的時候，皮克敏會禿頭，直到你派遣他出去路邊盛開的大花拿明信片，或者是等待時間治癒皮克敏，重新長出葉子。
+皮克敏頭上呈現「花苞」狀態時，無論餵食哪一類的精華，就能從一片花瓣直接變成兩片。
+蘑菇 升級到可以打蘑菇之後，就是地獄的開始（誤
+玩家每天可免費參加3次蘑菇挑戰；一般情況下，前5名玩家可直接加入，第6名起則須使用蘑菇儲值券，實際參與人數上限會依蘑菇大小而異。
+除了附近的菇點，玩家也可透過好友邀請或蘑菇戰鬥大聲公，前往距離較遠的菇點一同挑戰。
+週末會出現巨大活動蘑菇，可以獲得基本點數200以上，對於累積活動點數很有幫助。
+每月任務 每個月會有一個新主題活動的皮克敏要收集，主題皮克敏的戰鬥力會特別強，在活動蘑菇中的戰鬥力是300以上（隨著愛心增加會略微上升）。副主題的皮克敏戰鬥力則是100以上（隨著愛心增加會略微上升）。
+玩家互動 明信片 玩家在摧毀蘑菇後，會取得該地標對應的明信片，上面會顯示實際地標照片。明信片除了可自行收藏，也能寄送給其他玩家。
+每週挑戰 遊戲每週會開放步行挑戰與種花挑戰，每組最多五名玩家共同參與。玩家可主動邀請朋友加入，系統會累計全體成員的步數或種花數量，達成目標後即可獲得獎勵。
+Party Walk 玩家也可參與其他人發起的Party Walk，透過邀請連結即可加入。Party Walk期間，主畫面會顯示主辦者的遊戲角色，並即時累計所有參與者的步數總和。
+社群日 除了每天的大花挑戰，種植當季花朵獲得限定的系列皮克敏外，新手玩家絕對不能錯過的，就是每個月的社群日！社群日通常會在週末舉行，只要當天累積走滿10,000步，就能獲得當月限定的社群日徽章；同時，大花盛開後還能開出當月指定花種，讓平時較難取得的花瓣與精華變得更容易蒐集。
+活動期間還會搭配額外加成，例如大花開花時間延長、蘑菇挑戰獎勵提升，甚至推出限定活動內容
+參考資料：
+皮克敏2026攻略 《皮克敏》怎麼玩？初級皮友必學4攻略　花瓣、探測器、社群日一次搞懂 </p>
+  </div>
+  <footer class="entry-footer"><span title='2026-09-14 00:00:00 +0000 UTC'>September 14, 2026</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-14 00:00:00 +0000 UTC'>Last updated on September 14, 2026</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to 皮學筆記" href="http://localhost:1313/MelissasNotebook/note/pikmin-notes/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">福爾摩莎臺灣閱讀清單
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>認識近代臺灣 《台灣斷交史》法律白話文運動 《意外的國父》汪浩 《意外的國度》林孝庭 《台湾踏查日記》伊能嘉矩 《宮前町九十番地》陳柔縉 《Formosa Betrayed》 George H. Kerr 中譯為《被出賣的臺灣》 《高一生獄中家書》 台灣著作的德文譯本 吳明益《複眼人》 Wu Ming-Yi - Der Mann mit den Facettenaugen 李昂《看得見的鬼》 Li Ang - Sichtbare Geister 李昂《殺父》 Li Ang - Gattenmord 鄭炯明《鄭炯明詩選：白色的思念》 Cheng Chiung-ming - Gedanken in Weiss 邱妙津《鱷魚手記》 Qiu Miaojin - Aufzeichnungen eines Krokodils 陳玉慧《海神家族》 Jade Y. Chen - Die Insel der Göttin 蕭瑋萱《成為怪物以前》 游珮芸、周見信《清水的孩子》 Yu, Pei-yun (Text) &amp; Zhou, Jian-xin (Illustration) - Son of Formosa (EN)/ Tsai Kun-lin – Gesamtausgabe (DE) 《炒飯狙擊手》 Chang Kuo-Li - Der grillende Killer 陳思宏《鬼地方》 Kevin Chen - Geisterdämmerung 蒔舞《巫者》 The Wizard - Wenn Worte töten Einzelband 楊雙子《臺灣漫遊錄》 Yang Shuang-zi - Taiwan Travelogue (EN)/???(DE)（尚未出版） 漫畫 小峱峱《守娘》 Nownow - Guardienne 狼七《黎明前的回聲》 Lang-Chi - The Echo before Dawn 小莊《80年代事件簿》 吳識鴻《OKEN:詩的端倪》 Wu Shih-hung - OKEN – Geburt eines Dichters 阮光民《東華春理髮廳》 Ruan Guangmin - Donghuachun Friseursalon CCC台漫英譯 童書 幾米作品多有外文翻譯～
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-02-19 00:00:00 +0000 UTC'>February 19, 2026</span>&nbsp;·&nbsp;<span title='Last updated 2026-02-19 00:00:00 +0000 UTC'>Last updated on February 19, 2026</span>&nbsp;·&nbsp;1 min</footer>
+  <a class="entry-link" aria-label="post link to 福爾摩莎臺灣閱讀清單" href="http://localhost:1313/MelissasNotebook/note/formosan-books/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Post Template
     </h2>
   </header>
   <div class="entry-content">
     <p>header 1 This is a template for future posts.
-</p>
+file structure
+my-project/ └── config/ ├── _default/ │ ├── hugo.toml │ ├── menus.en.toml │ ├── menus.de.toml │ └── params.toml └── production/ └── params.toml </p>
   </div>
-  <footer class="entry-footer"><span title='2000-01-31 00:00:00 +0000 UTC'>January 31, 2000</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-12 17:44:42 +0200 CEST'>Last updated on September 12, 2026</span>&nbsp;·&nbsp;1 min</footer>
+  <footer class="entry-footer"><span title='2000-01-01 00:00:00 +0000 UTC'>January 1, 2000</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-14 17:50:29 +0200 CEST'>Last updated on September 14, 2026</span>&nbsp;·&nbsp;1 min</footer>
   <a class="entry-link" aria-label="post link to Post Template" href="http://localhost:1313/MelissasNotebook/note/post_template/"></a>
 </article>
     </main>

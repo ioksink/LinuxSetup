@@ -6,7 +6,7 @@ copyright: © 2026 Melissa Kueh
 
 params:
   env: production
-  defaultTheme: auto
+  defaultTheme: light
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -14,7 +14,7 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: true
-  searchHidden: true
+  displayFullLangName: true
 
   profileMode:
     enabled: true
@@ -45,7 +45,7 @@ menu:
     - name: "Tech"
       url: /tech/
       weight: 30
-    - name: Blog
+    - name: "zh-Blog"
       url: /Blog/
       weight: 40
     - name: Note
@@ -58,3 +58,11 @@ frontmatter:
     - lastmod
     - :git
     - date
+
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en-uk"
+  'zh-tw':
+    languageName: "繁體中文"
+    languageCode: "zh-tw"

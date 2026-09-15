@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto" data-theme="light">
 
 <head><script src="/MelissasNotebook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MelissasNotebook/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,41 +28,10 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script><meta property="og:url" content="http://localhost:1313/MelissasNotebook/tech/">
@@ -117,7 +86,13 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
+                </button><span class="nav-sep">|</span>
+                    <ul class="lang-menu">
+                        <li>
+                            <a href="http://localhost:1313/MelissasNotebook/zh-tw/" title="繁體中文"
+                                aria-label="繁體中文">繁體中文</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu" class="menu">
@@ -137,8 +112,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/MelissasNotebook/blog/" title="Blog">
-                    <span>Blog</span>
+                <a href="http://localhost:1313/MelissasNotebook/blog/" title="zh-Blog">
+                    <span>zh-Blog</span>
                 </a>
             </li>
             <li>
@@ -176,7 +151,7 @@ This is originally my personal github repo to store all my note markdown files t
 Hmm…… yes! There are already frameworks for setting up static websites, for example, Hugo.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-09-13 00:00:00 +0000 UTC'>September 13, 2026</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-13 00:00:00 +0000 UTC'>Last updated on September 13, 2026</span>&nbsp;·&nbsp;3 min</footer>
+  <footer class="entry-footer"><span title='2026-09-13 00:00:00 +0000 UTC'>September 13, 2026</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-14 17:50:29 +0200 CEST'>Last updated on September 14, 2026</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to Setup a website by Hugo and Papermod" href="http://localhost:1313/MelissasNotebook/tech/website-hugo-setup/"></a>
 </article>
 

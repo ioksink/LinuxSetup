@@ -1,0 +1,12 @@
+{{- if .AllTranslations -}}
+  <span class="post-meta-item">
+    Translations: 
+    {{- range .AllTranslations -}}
+      {{- if ne .Lang $.Lang -}}
+        <a href="{{ .RelPermalink }}" class="post-meta-item">
+          {{- .Language.LanguageName -}}
+        </a>
+      {{- end -}}
+    {{- end -}}
+  </span>
+{{- end -}}

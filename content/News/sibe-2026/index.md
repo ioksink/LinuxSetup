@@ -1,7 +1,6 @@
 ---
 title: "SIBE Evolutione Congress 2026"
 date: 2026-09-06
-draft: false
 ---
 
 I took my master thesis as a poster to [Firenze 2026](https://www.sibe-iseb.it/en/firenze2026)!

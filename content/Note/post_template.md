@@ -1,6 +1,6 @@
 ---
 title: "Post Template"
-date: 2000-01-31
+date: 2000-01-01
 draft: false
 ---
 

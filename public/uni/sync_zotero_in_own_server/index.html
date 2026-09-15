@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto" data-theme="light">
 
 <head><script src="/MelissasNotebook/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=MelissasNotebook/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,41 +28,10 @@ If you already have Zotero in your computers, the build-in Zotero sync can somet
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-    </style>
 </noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script><meta property="og:url" content="http://localhost:1313/MelissasNotebook/uni/sync_zotero_in_own_server/">
@@ -155,7 +124,13 @@ If you already have Zotero in your computers, the build-in Zotero sync can somet
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                </button>
+                </button><span class="nav-sep">|</span>
+                    <ul class="lang-menu">
+                        <li>
+                            <a href="http://localhost:1313/MelissasNotebook/zh-tw/" title="繁體中文"
+                                aria-label="繁體中文">繁體中文</a>
+                        </li>
+                    </ul>
             </div>
         </div>
         <ul id="menu" class="menu">
@@ -175,8 +150,8 @@ If you already have Zotero in your computers, the build-in Zotero sync can somet
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/MelissasNotebook/blog/" title="Blog">
-                    <span>Blog</span>
+                <a href="http://localhost:1313/MelissasNotebook/blog/" title="zh-Blog">
+                    <span>zh-Blog</span>
                 </a>
             </li>
             <li>
@@ -206,7 +181,8 @@ If you already have Zotero in your computers, the build-in Zotero sync can somet
     <h1 class="post-title entry-hint-parent">
       Sync Zotero in Your Own Server
     </h1>
-    <div class="post-meta"><span title='2026-07-06 00:00:00 +0000 UTC'>July 6, 2026</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-12 02:51:39 +0200 CEST'>Last updated on September 12, 2026</span>&nbsp;·&nbsp;10 min&nbsp;|&nbsp;<span>
+    <div class="post-meta"><span title='2026-07-06 00:00:00 +0000 UTC'>July 6, 2026</span>&nbsp;·&nbsp;<span title='Last updated 2026-09-12 02:51:39 +0200 CEST'>Last updated on September 12, 2026</span>&nbsp;·&nbsp;10 min<span class="post-meta-item">
+    Translations:</span>&nbsp;|&nbsp;<span>
         <a href="https://github.com/ioksink/MelissasNotebook/content/Uni/Sync_Zotero_in_own_server.md" rel="noopener noreferrer edit" target="_blank">Edit</a>
     </span>
 
@@ -289,7 +265,7 @@ If you already have Zotero in your computers, the build-in Zotero sync can somet
 
   <div class="post-content md-content"><h1 id="merging-two-or-more-zotero-in-server">Merging two (or more) Zotero in server<a hidden class="anchor" aria-hidden="true" href="#merging-two-or-more-zotero-in-server">#</a></h1>
 <p>If you already have Zotero in your computers, the build-in Zotero sync can sometimes create fake links of attached file on your computers. That is because the build-in sync function only syncs the local file locations, which means the file is only in one device <strong>locally</strong>. Here, I would like to guide you through a solution using the free build-in Zotero sync for metadata and self-arranged server to sync attached files.</p>
-<p>Any server type or NAS can do the job. I am using the samba server provided by the university as the bidirectional backup storage of my own Zotero library between a debian linux working desktop and a fedora linux personal laptop. (guideline for the uni Freiburg samba server is in <a href="Uni-Freiburg-service.md">Uni-Freiburg-service.md</a>.</p>
+<p>Any server type or NAS can do the job. I am using the samba server provided by the university as the bidirectional backup storage of my own Zotero library between a debian linux working desktop and a fedora linux personal laptop. (guideline for the uni Freiburg samba server is in <a href="/MelissasNotebook/uni/uni-freiburg-service/">Uni-Freiburg-service.md</a>.</p>
 <h2 id="-the-golden-rule-of-zotero">⚠️ The Golden Rule of Zotero<a hidden class="anchor" aria-hidden="true" href="#-the-golden-rule-of-zotero">#</a></h2>
 <p><strong>Never put your active Zotero database folder directly on the NAS.</strong>
 Doing so can corrupt your library and cause you to lose your citations. Instead, we use a <strong>&ldquo;Hybrid Sync&rdquo;</strong> method:</p>
@@ -308,9 +284,9 @@ Doing so can corrupt your library and cause you to lose your citations. Instead,
 <li>Arch-based distro runs <code>sudo pacman -i &lt;packageName&gt;</code>. There is also <a href="https://wiki.archlinux.org/title/Rsync">an ArchWiki page for <code>rsync</code></a>.</li>
 <li>Windows users cannot run <code>rsync</code> natively, so the best way to achieve the same result is using a tool called <strong>FreeFileSync</strong>. It is free, open-source, visual (GUI), and does exactly what <code>rsync</code> does but with buttons and colours.</li>
 </ul>
-<p><strong>WINDOWS USER? DIRECTLY JUMP TO <a href="#for-windows-users">HERE</a>!</strong></p>
+<p><strong>WINDOWS USER? DIRECTLY JUMP TO <a href="/MelissasNotebook/uni/sync_zotero_in_own_server/#for-windows-users">HERE</a>!</strong></p>
 <h2 id="step-2-check-connection">Step 2: check connection<a hidden class="anchor" aria-hidden="true" href="#step-2-check-connection">#</a></h2>
-<p>You can follow the <a href="Uni-Freiburg-service.md">Uni-Freiburg-service guide</a> to add the server to your file manager. Or, test a ssh connection:</p>
+<p>You can follow the <a href="/MelissasNotebook/uni/uni-freiburg-service/">Uni-Freiburg-service guide</a> to add the server to your file manager. Or, test a ssh connection:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh &lt;UserID&gt;@login.uni-freiburg.de
 </span></span></code></pre></div><h3 id="input-password-with-sshpass">Input password with sshpass<a hidden class="anchor" aria-hidden="true" href="#input-password-with-sshpass">#</a></h3>
 <p>Before using <code>sshpass</code>, you at least need to connect to the server with ssh once to build fingerprint. Uni-Freiburg users run <code>&lt;UserID&gt;@login.uni-freiburg.de</code> in the terminal. The prompt would ask for the password. Give the uni account password and press Enter. You will now enter the storage university grants you. Enter &ldquo;exit&rdquo; when you want to close the connection.</p>
